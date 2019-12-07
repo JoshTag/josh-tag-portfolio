@@ -1,0 +1,60 @@
+@import "../../styles/scss/Master";
+
+.education {
+  padding: 0 16px;
+  margin-bottom: 100px;
+  @include font-black;
+
+  @include tablet {
+    padding: 0 60px;
+  }
+
+  @include laptop {
+    padding: 0 100px;
+  }
+
+  @include desktop {
+    padding: 0 160px;
+  }
+
+  &__header {
+    margin: 24px 0 16px;
+    font-size: 2rem;
+  }
+
+  &__block {
+    margin-top: 16px;
+
+    @include tablet {
+      margin-top: 24px;
+    }
+
+    @include laptop {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    &__title {
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    &__date {
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      color: $colour-grey;
+      font-weight: 800;
+
+      @include laptop {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+    }
+
+    &__program {
+      @include laptop {
+        font-size: 18px;
+      }
+    }
+  }
+}

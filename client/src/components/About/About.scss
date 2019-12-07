@@ -1,0 +1,86 @@
+@import "../../Styles/scss/Master";
+
+.about {
+
+  &__header {
+    font-size: 2rem;
+    color: $colour-black;
+    padding: 24px 16px 16px;
+
+    @include tablet {
+      padding: 24px 60px 34px;
+    }
+  
+    @include laptop {
+      padding: 40px 100px 34px;
+    }
+  
+    @include desktop {
+      padding: 40px 0 34px;
+      margin: 0 160px
+    }
+  }
+
+  &__content {
+    padding: 10vh 16px 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    @include laptop {
+      margin: 0 auto;
+      padding: 5vh 0;
+      width: 700px
+    }
+
+    @include desktop {
+      width: 800px;
+      margin: 0 auto;
+      padding: 5vh 0 10vh;
+    }
+
+    &__img {
+      object-fit: cover;
+      height: 150px;
+      width: 150px;
+      margin-bottom: 30px;
+
+      @include tablet {
+        height: 190px;
+        width: 190px;
+        margin: 0;
+      }
+
+      @include tablet {
+        height: 230px;
+        width: 230px;
+        margin: 0;
+      }
+    }
+
+    &__text {
+      @include font-black;
+      line-height: 25px;
+      text-align: center;
+
+      @include tablet{
+        width: 230px;
+        text-align: left;
+
+      }
+
+      @include laptop{
+        font-size: 20px;
+        width: 400px;
+        line-height: 30px;
+      }
+    }
+  }
+}
