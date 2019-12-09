@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Plx from "react-plx";
 import "./Skills.scss";
 
@@ -27,8 +27,7 @@ import {
   parallaxVue
 } from "./ParallaxData";
 
-export class Skills extends Component {
-  render() {
+const Skills = () => {
     return (
       <div className="skillsContainer" name="skills">
         <h2 className="skillsContainer__header">Skills</h2>
@@ -93,8 +92,7 @@ export class Skills extends Component {
           </Plx>
         </div>
       </div>
-    );
-  }
+    )
 }
 
 export default Skills;

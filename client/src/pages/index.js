@@ -17,6 +17,7 @@ export default () => {
             slug
             url
             description
+            background
             image {
               childImageSharp {
                 fluid {
@@ -36,11 +37,15 @@ export default () => {
     <Layout>
       <Hero />
       <About />
+      <section name="projects">
       {projects.map(({ node: project }, index) => {
         const title = project.title
         const description = project.description
         const slug = project.slug
         const imageData = project.image.childImageSharp.fluid
+        const url = project.url
+        const background = project.background
+        console.log(background)
         return (
           <ProjectPreview
             key={index}
@@ -48,9 +53,12 @@ export default () => {
             description={description}
             imageData={imageData}
             slug={slug}
+            url={url}
+            background={background}
           />
         )
       })}
+      </section>
       <Skills />
       <Education />
     </Layout>

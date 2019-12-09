@@ -1,11 +1,12 @@
 import React from "react"
-import Footer from "../components/Footer"
-import { Link } from "gatsby"
-
 import "./layout.css"
+import Navigation from "./Navigation"
+import Footer from "./Footer"
+// import { Link } from "gatsby"
 
 const Layout = ({ children }) => (
   <>
+    <Navigation />
     <main>{children}</main>
     <Footer />
   </>

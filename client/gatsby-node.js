@@ -26,3 +26,5 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 }
+
+// This file exports a function that creates pages programmatically 
