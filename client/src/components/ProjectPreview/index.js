@@ -2,15 +2,21 @@ import React from "react"
 import "./Projects.scss"
 // import { Link } from "gatsby"
 import Image from "gatsby-image"
-import openLink from "../../Assets/Dev Icons/open-link/open-link.svg"
+// import openLink from "../../Assets/Dev Icons/open-link/open-link.svg"
+import styled from "styled-components"
+
+const Project = styled.div`
+  height: 110vh;
+  background-image: ${props => props.bgGradient};
+`
 
 const ProjectPreview = ({ slug, title, description, imageData, url, background }) => {
-  console.log(slug, background);
   
   return (
-  <div className="project-container" style={{ background: background }}>
-    
-  </div>
+    <Project bgGradient={background} >
+      <Image fluid={imageData} />
+      <p>{title}</p>
+    </Project>
 
 //   <div className="projectContainer">
 //   <h3 className="project__header show_mobile">

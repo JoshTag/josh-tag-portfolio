@@ -1,23 +1,5 @@
 @import "../../styles/scss/Master";
 
-.hero {
-  background: radial-gradient(ellipse at bottom, #002f69 0%, #02275c 20%, #000000 100%);
-  overflow: hidden;
-  height: 90vh;
-  background-attachment: fixed;
-
-  &__header {
-    width: 100%;
-
-    &__svg {
-      width: 70%;
-      height: 80%;
-      margin: 25vh 14vw 0;
-    }
-  }
-}
-
-
 #stars3 {
 	content:" ";
   background: transparent;
@@ -67,10 +49,16 @@
 }
 
 @keyframes animStar {
-  from {
+  0% {
     transform: translateY(0px);
+    opacity: 0;
   }
-  to {
+  2%, 97% {
+    opacity: 1;
+  }
+  100%{
     transform: translateY(-1500px);
+    opacity: 0;
   }
 }
+

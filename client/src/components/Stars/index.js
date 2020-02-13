@@ -10,7 +10,7 @@ const Stars = () => {
     animateletter(".pathThree", 2200, 600)
     animateletter(".pathFour", 1900, 900)
     animateletter(".pathFive", 2800, 1200)
-    animateletter(".pathSix", 1800, 1250)
+    animateletter(".pathSix", 2150, 1250)
     animateletter(".pathSeven", 2200, 1800)
     animateletter(".pathEight", 2800, 2000)
     fillLetter()
