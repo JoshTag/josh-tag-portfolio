@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@react-spring/addons": "^9.0.0-beta.33",
     "animejs": "^3.1.0",
     "gatsby": "^2.18.4",
     "gatsby-image": "^2.2.34",

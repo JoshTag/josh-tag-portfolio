@@ -4,26 +4,31 @@
     "slug": "project-1",
     "url": "https://warcraftauctions.netlify.com/",
     "image": "./images/wow-mockup.png",
-    "description": "Warcraft Auctions is a site that helps players in World of Warcraft make decisions on which items to buy on the auction house through graphs which display price and quantity infomation.  Created for my BrainStation capstone.  Tech involved with this project are React.js, Node.js, Express.js, Heroku, mySQL, and phpMyAdmin.",
-    "background": "linear-gradient(104deg, #0031C3 0%, #00FFF0 100%)",
+    "description": "A site that helps players in World of Warcraft make decisions on which items to buy on the auction house through graphs which display price and quantity infomation.  Created for my BrainStation capstone.  (Desktop only)",
     "tags": ["React", "JavaScript", "Express"]
   },
   {
     "title": "Webdev-Slayr",
     "slug": "project-2",
     "url": "https://webdev-slayr.netlify.com/",
-    "image": "./images/webslayr-mockup.png",
-    "description": "Webdev-Slayr is a turn based game fighting game with a web developer theme.  You start as a junior dev and go through the caves of code to fight your way through until you face the final super developer boss.  All assets were created by myself using sketch.  This project was created to teach myself Vue.js as well as sketch.",
-    "background": "radial-gradient(circle at top left, #BE00BE 0%, #430099 100%)",
-    "tags": ["Vue", "JavaScript" ]
+    "image": "./images/webslayer-mockup.png",
+    "description": "A turn based game fighting game with a web developer theme.  You start as a junior dev and go through the caves of code to fight your way through until you face the final super developer boss.",
+    "tags": ["Vue", "JavaScript"]
   },
   {
     "title": "Star Wars Database",
     "slug": "project-3",
     "url": "https://github.com/JoshTag/starwars-database",
     "image": "./images/starwars-mockup.png",
-    "description": "Currently, a work in progress project used to teach myself react hooks and dive deeper into express. My goal with this project was to teach myself hooks by creating a full CRUD application with a back-end.",
-    "background": "radial-gradient(74% 99%, #FFFDA0 20%, #fffb00  100%)",
-    "tags": ["React", "JavaScript", "Star Wars"]
+    "description": "A Star Wars database used to teach myself react hooks and Firebase.  My goal with this project was to teach myself hooks by creating a full CRUD application as well as incorporating a database.",
+    "tags": ["React", "JavaScript", "Firebase", "Star Wars"]
+  },
+  {
+    "title": "Dog Hot Dog",
+    "slug": "project-4",
+    "url": "https://github.com/JoshTag/dog-hot-dog",
+    "image": "./images/doghotdog-mockup.png",
+    "description": "A fun mini game where you are shown GIFs and must choose if it is a Dog or Hot Dog.  Created with Roy Lee Jr.",
+    "tags": ["React", "JavaScript", "Firebase", "Giphy API", "Dogs", "Hot Dogs"]
   }
 ]
