@@ -38,13 +38,13 @@ const float = keyframes`
     transform: translateY(0);
   }
   25% {
-    transform: translateY(-10px);
+    transform: translateY(-7px);
   }
   50% {
     transform: translateY(0);
   }
   75% {
-    transform: translateY(10px);
+    transform: translateY(7px);
   }
   100% {
     transform: translateY(0);
@@ -155,10 +155,10 @@ const Project = styled.article`
     animation: ${spin} 3.2s ease-in-out infinite;
   }
   :hover #project-2-hover {
-    animation: ${shake} 4s linear infinite;
+    animation: ${shake} 2.5s linear infinite;
   }
   :hover #project-3-hover {
-    animation: ${float} 4s linear infinite;
+    animation: ${float} 3.5s linear infinite;
   }
   :hover #project-4-hover {
     animation: ${twerk} 6s infinite alternate;
@@ -189,9 +189,10 @@ const ProjectDetailsLeft = styled.div`
   }
 `
 
-const ProjectTitle = styled.div`
+const ProjectTitle = styled.h3`
   font-size: 1.5rem;
   margin: 1.25rem 0;
+  font-weight: 400;
   @media (min-width: 48rem) {
     font-size: 1.75rem;
   }
@@ -219,7 +220,7 @@ const BtnContainer = styled.div`
 const ProjectButtons = styled.a`
   text-decoration: none;
   text-align: center;
-  width: 6rem;
+  width: 6.5rem;
   border: solid 1px #fff;
   padding: 0.5rem 1rem;
   margin: 0 1rem 2rem 0;
@@ -232,7 +233,7 @@ const ProjectButtons = styled.a`
   position: relative;
   :hover {
     cursor: pointer;
-    box-shadow: 0 6px 14px -1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 20px -1px rgba(0, 0, 0, 0.4);
   }
   :after {
     background: #fff;
@@ -330,7 +331,7 @@ const ProjectPreview = ({
   slug
 }) => {
   return (
-    <Project bg={projectTheme[title].bg} >
+    <Project bg={projectTheme[title].bg}>
       <ProjectDetailsLeft>
         <ProjectTitle>{title.toUpperCase()}</ProjectTitle>
         <ProjectDescription>{description}</ProjectDescription>
@@ -349,10 +350,7 @@ const ProjectPreview = ({
         <MockupAsset mockup={projectTheme[title].mockup}>
           {title === "Dog Hot Dog" ? (
             <CorgiAsset mockup={projectTheme[title].mockup}>
-              <img
-                src={projectTheme[title].img.body}
-                alt="Project Asset"
-              />
+              <img src={projectTheme[title].img.body} alt="Project Asset" />
               <CorgiButt
                 src={projectTheme[title].img.butt}
                 alt="Project Asset"
@@ -361,7 +359,11 @@ const ProjectPreview = ({
               />
             </CorgiAsset>
           ) : (
-            <img id={`${slug}-hover`} src={projectTheme[title].img} alt="Project Asset" />
+            <img
+              id={`${slug}-hover`}
+              src={projectTheme[title].img}
+              alt="Project Asset"
+            />
           )}
         </MockupAsset>
         <ProjectTags>Tags: {tags}</ProjectTags>

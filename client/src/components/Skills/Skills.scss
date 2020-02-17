@@ -1,39 +1,16 @@
-@import "../../styles/scss/Master";
 
 .skillsContainer {
   padding: 24px 0 16px;
   background: #ffffff;
-  @include font-black;
 
-  @include tablet {
-    padding: 24px 0 16px;
-  }
 
-  @include laptop {
-    padding: 40px 0 40px;
-  }
-
-  @include desktop {
-    padding: 40px 0 90px;
-  }
 
   &__header {
     font-size: 2rem;
-    color: $colour-black;
+    color: black;
     padding: 0 16px 16px;
 
-    @include tablet {
-      padding: 0 60px 34px;
-    }
-  
-    @include laptop {
-      padding: 0 100px 34px;
-    }
-  
-    @include desktop {
-      padding: 0 0 34px;
-      margin: 0 160px
-    }
+
   }
 
   &__icons {
@@ -45,35 +22,13 @@
     width: 288px;
     margin: 0 auto;
 
-    @include tablet {
-      width: 525px;
-      margin: 0 auto;
-    }
-    @include laptop {
-      width: 700px;
-      margin: 0 auto;
-    }
-    @include desktop {
-      width: 850px;
-      margin: 0 auto;
-    }
+
 
     &--img{
       height: 70px;
       width: 70px;
       padding: 5px;
 
-      @include tablet {
-        height: 110px;
-        width: 110px;
-        padding: 15px;
-      }
-
-      @include desktop {
-        height: 130px;
-        width: 130px;
-        padding: 15px;
-      }
     }
   }
 }

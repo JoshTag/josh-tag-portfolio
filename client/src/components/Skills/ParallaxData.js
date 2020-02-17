@@ -2,13 +2,18 @@ const parallaxCSS = [
   {
     start: "self",
     end: "self",
-    startOffset: "65vh",
-    endOffset: 950,
+    startOffset: "70vh",
+    endOffset: 1150,
     properties: [
       {
         startValue: 0,
         endValue: 200,
         property: "rotate"
+      },
+      {
+        startValue: 0,
+        endValue: 200,
+        property: "rotateX"
       },
       {
         startValue: 0,
@@ -29,7 +34,7 @@ const parallaxGit = [
     start: "self",
     end: "self",
     startOffset: "80vh",
-    endOffset: 1200,
+    endOffset: 1000,
     properties: [
       {
         startValue: 0,
@@ -117,39 +122,21 @@ const parallaxJS = [
   }
 ];
 
-const parallaxMongo = [
+const parallaxSass = [
   {
     start: "self",
     end: "self",
-    startOffset: "55vh",
-    endOffset: "60vh",
+    startOffset: "70vh",
+    endOffset: 800,
     properties: [
       {
-        startValue: 1,
-        endValue: 2,
-        property: "scaleX"
-      }
-    ]
-  },
-  {
-    start: "self",
-    end: "self",
-    startOffset: "60vh",
-    endOffset: "70vh",
-    properties: [
-      {
-        startValue: 1,
-        endValue: 2,
-        property: "scaleY"
-      },
-      {
-        startValue: 2,
-        endValue: 1,
-        property: "scaleX"
+        startValue: 0,
+        endValue: 140,
+        property: "rotateY"
       },
       {
         startValue: 0,
-        endValue: -45,
+        endValue: -90,
         property: "rotate"
       }
     ]
@@ -157,60 +144,160 @@ const parallaxMongo = [
   {
     start: "self",
     end: "self",
-    startOffset: "65vh",
-    endOffset: "110vh",
+    startOffset: "70vh",
+    endOffset: "100vh",
     properties: [
       {
         startValue: 0,
-        endValue: -600,
+        endValue: -150,
         property: "translateY"
       },
       {
         startValue: 0,
-        endValue: -600,
+        endValue: 20,
         property: "translateX"
       }
     ]
   }
 ];
 
-const parallaxMySQL = [
+const parallaxGatsby = [
   {
     start: "self",
     end: "self",
     startOffset: "60vh",
-    endOffset: "100vh",
+    endOffset: "120vh",
     properties: [
       {
         startValue: 0,
-        endValue: -170,
+        endValue: 365,
+        property: "rotate"
+      },
+      {
+        startValue: 0,
+        endValue: -150,
         property: "translateY"
       },
       {
         startValue: 0,
-        endValue: -140,
+        endValue: -80,
         property: "translateX"
       },
       {
         startValue: 0,
-        endValue: -60,
-        property: "skew"
-      },
-      {
-        startValue: 0,
-        endValue: -600,
-        property: "rotateX"
+        endValue: -240,
+        property: "rotateY"
       }
     ]
   }
+];
+
+const parallaxGraphQL = [
+  {
+    start: "self",
+    end: "self",
+    startOffset: "65vh",
+    endOffset: "120vh",
+    properties: [
+      {
+        startValue: 0,
+        endValue: -100,
+        property: "translateX"
+      },
+      {
+        startValue: 0,
+        endValue: -270,
+        property: "rotate"
+      },
+      {
+        startValue: 0,
+        endValue: -120,
+        property: "translateY"
+      }
+    ]
+  }
+];
+
+
+const parallaxReact = [
+  {
+    start: "self",
+    end: "self",
+    startOffset: "70vh",
+    endOffset: "100vh",
+    properties: [
+      {
+        startValue: 1,
+        endValue: 2,
+        property: "scale"
+      },
+      {
+        startValue: 0,
+        endValue: 365,
+        property: "rotate"
+      },
+      {
+        startValue: 1,
+        endValue: 0,
+        property: "opacity"
+      }
+    ]
+  }
+];
+
+const parallaxVue = [
+  {
+    start: "self",
+    end: "self",
+    startOffset: "70vh",
+    endOffset: "120vh",
+    properties: [
+      {
+        startValue: 0,
+        endValue: -200,
+        property: "translateY"
+      },
+      {
+        startValue: 0,
+        endValue: 90,
+        property: "translateX"
+      }
+    ]
+  },
+  {
+    start: "self",
+    end: "self",
+    startOffset: "70vh",
+    endOffset: "90vh",
+    properties: [
+      {
+        startValue: 0,
+        endValue: -365,
+        property: "rotateY"
+      }
+    ]
+  },
+  {
+    start: "self",
+    end: "self",
+    startOffset: "90vh",
+    endOffset: "110vh",
+    properties: [
+      {
+        startValue: 0,
+        endValue: -365,
+        property: "rotateY"
+      }
+    ]
+  },
 ];
 
 const parallaxNode = [
   {
     start: "self",
     end: "self",
-    startOffset: "70vh",
-    endOffset: 900,
+    startOffset: "65vh",
+    endOffset: "120vh",
     properties: [
       {
         startValue: 0,
@@ -236,131 +323,162 @@ const parallaxNode = [
   }
 ];
 
-const parallaxReact = [
+const parallaxFirebase = [
+  {
+    start: "self",
+    end: "self",
+    startOffset: "40vh",
+    endOffset: "120vh",
+    properties: [
+      {
+        startValue: 1,
+        endValue: 2,
+        property: "scaleX"
+      },
+      {
+        startValue: 0,
+        endValue: -165,
+        property: "rotateX"
+      },
+      {
+        startValue: 0,
+        endValue: 360,
+        property: "rotate"
+      },
+      {
+        startValue: 0,
+        endValue: -180,
+        property: "translateY"
+      },
+      {
+        startValue: 0,
+        endValue: -360,
+        property: "translateX"
+      }
+    ]
+  },
+];
+
+const parallaxExpress = [
   {
     start: "self",
     end: "self",
     startOffset: "45vh",
-    endOffset: "100vh",
-    properties: [
-      {
-        startValue: 1,
-        endValue: 3,
-        property: "scale"
-      },
-      {
-        startValue: 0,
-        endValue: 365,
-        property: "rotate"
-      },
-      {
-        startValue: 1,
-        endValue: 0,
-        property: "opacity"
-      },
-      {
-        startValue: 1,
-        endValue: 100,
-        property: "translateY"
-      }
-    ]
-  }
-];
-
-const parallaxSass = [
-  {
-    start: "self",
-    end: "self",
-    startOffset: "65vh",
-    endOffset: "100vh",
-    properties: [
-      {
-        startValue: 0,
-        endValue: 140,
-        property: "rotateY"
-      },
-      {
-        startValue: 0,
-        endValue: -90,
-        property: "rotate"
-      }
-    ]
-  },
-  {
-    start: "self",
-    end: "self",
-    startOffset: "70vh",
-    endOffset: "100vh",
-    properties: [
-      {
-        startValue: 0,
-        endValue: -200,
-        property: "translateY"
-      },
-      {
-        startValue: 0,
-        endValue: 20,
-        property: "translateX"
-      }
-    ]
-  }
-];
-
-const parallaxVue = [
-  {
-    start: "self",
-    end: "self",
-    startOffset: "60vh",
-    endOffset: "80vh",
-    properties: [
-      {
-        startValue: 0,
-        endValue: -365,
-        property: "rotateY"
-      }
-    ]
-  },
-  {
-    start: "self",
-    end: "self",
-    startOffset: "60vh",
     endOffset: "120vh",
     properties: [
       {
         startValue: 0,
-        endValue: -400,
+        endValue: -105,
+        property: "rotateX"
+      },
+      {
+        startValue: 0,
+        endValue: 270,
+        property: "rotate"
+      },
+      {
+        startValue: 0,
+        endValue: -230,
+        property: "translateY"
+      },
+      {
+        startValue: 0,
+        endValue: -240,
+        property: "translateX"
+      }
+    ]
+  },
+];
+
+
+const parallaxHeroku = [
+  {
+    start: "self",
+    end: "self",
+    startOffset: "48vh",
+    endOffset: "110vh",
+    properties: [
+      {
+        startValue: 0,
+        endValue: 185,
+        property: "rotateX"
+      },
+      {
+        startValue: 0,
+        endValue: 45,
+        property: "rotate"
+      },
+      {
+        startValue: 0,
+        endValue: -180,
+        property: "translateY"
+      }
+    ]
+  },
+];
+
+const parallaxMySQL = [
+  {
+    start: "self",
+    end: "self",
+    startOffset: "45vh",
+    endOffset: "110vh",
+    properties: [
+      {
+        startValue: 0,
+        endValue: -170,
+        property: "translateY"
+      },
+      {
+        startValue: 0,
+        endValue: 140,
+        property: "translateX"
+      },
+      {
+        startValue: 0,
+        endValue: -60,
+        property: "skew"
+      },
+      {
+        startValue: 0,
+        endValue: -600,
+        property: "rotateX"
+      }
+    ]
+  }
+];
+
+const parallaxNetlify = [
+  {
+    start: "self",
+    end: "self",
+    startOffset: "40vh",
+    endOffset: "110vh",
+    properties: [
+      {
+        startValue: 0,
+        endValue: -100,
         property: "translateY"
       },
       {
         startValue: 0,
         endValue: 30,
         property: "translateX"
-      }
-    ]
-  },
-  {
-    start: "self",
-    end: "self",
-    startOffset: "80vh",
-    endOffset: "100vh",
-    properties: [
+      },
       {
         startValue: 0,
-        endValue: -365,
-        property: "rotateY"
-      }
-    ]
-  },
-  {
-    start: "self",
-    end: "self",
-    startOffset: "100vh",
-    endOffset: "120vh",
-    properties: [
+        endValue: -45,
+        property: "skew"
+      },
       {
         startValue: 0,
-        endValue: -365,
-        property: "rotateY"
+        endValue: -300,
+        property: "rotateX"
+      },
+      {
+        startValue: 0,
+        endValue: -180,
+        property: "rotate"
       }
     ]
   }
@@ -372,10 +490,15 @@ export {
   parallaxHTML,
   parallaxGit,
   parallaxJS,
-  parallaxMongo,
+  parallaxFirebase,
   parallaxMySQL,
   parallaxNode,
   parallaxReact,
   parallaxSass,
-  parallaxVue
+  parallaxVue,
+  parallaxGatsby,
+  parallaxGraphQL,
+  parallaxExpress,
+  parallaxHeroku,
+  parallaxNetlify
 };

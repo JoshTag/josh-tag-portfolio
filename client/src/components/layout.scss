@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:500&display=swap');
+
 @font-face {
   font-family: 'Barlow Condensed', sans-serif;
-  src: url('./../Asset/Fonts/BarlowCondensed-Regular.ttf');
+  src: url('./../Asset/Fonts/BarlowCondensed-Regular.ttf') format('truetype');
 }
 
 * {
