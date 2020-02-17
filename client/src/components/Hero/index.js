@@ -24,6 +24,7 @@ const parallax = [
     ]
   }
 ];
+
 class Hero extends Component {
   render() {
     return (

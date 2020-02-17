@@ -6,13 +6,13 @@ import ProjectPreview from "../components/ProjectPreview"
 import styled from "styled-components"
 
 const ProjectContainer = styled.section`
-  background-image: linear-gradient(270deg, #7A5CFF 0%, #30BEFF 100%);
   position: relative;
   color: #FFF;
+  padding: 1rem 0 2rem;
   :before {
     content: "";
     position: absolute;
-    background-image: linear-gradient(270deg, #7A5CFF 0%, #30BEFF 100%);
+    background: #FFF;
     top: -119px;
     width: 100%;
     height: 120px;
@@ -21,7 +21,7 @@ const ProjectContainer = styled.section`
   :after {
     content: "";
     position: absolute;
-    background-image: linear-gradient(270deg, #7A5CFF 0%, #30BEFF 100%);
+    background: #FFF;
     bottom: -119px;
     width: 100%;
     height: 120px;
@@ -32,6 +32,14 @@ const ProjectTitle = styled.h2`
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
+  color: #2d2d2d;
+  @media (min-width: 48rem) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 64rem) {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+  }
 `
 
 export default () => {
@@ -44,6 +52,8 @@ export default () => {
             slug
             url
             description
+            gitHubURL
+            tags
             image {
               childImageSharp {
                 fluid(maxWidth: 450) {
@@ -57,7 +67,7 @@ export default () => {
     }
   `)
 
-  const projects = data.allConfigJson.edges
+  const projects = data.allConfigJson.edges;
 
   return (
     <Layout>
@@ -70,6 +80,8 @@ export default () => {
           const slug = project.slug
           const imageData = project.image.childImageSharp.fluid
           const url = project.url
+          const gitHubURL = project.gitHubURL
+          const tags = project.tags
 
           return (
             <ProjectPreview
@@ -79,9 +91,11 @@ export default () => {
               imageData={imageData}
               slug={slug}
               url={url}
+              gitHubURL={gitHubURL}
+              tags={tags}
             />
           )
-        })}
+        }).reverse()}
       </ProjectContainer>
       {/* <Skills />
       <Education /> */}
