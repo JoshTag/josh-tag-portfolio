@@ -286,6 +286,7 @@ const ProjectTags = styled.p`
 
 const ProjectMockup = styled(Image)`
   box-shadow: ${props => props.bs};
+  border-radius: 10px;
 `
 
 const MockupAsset = styled.div`

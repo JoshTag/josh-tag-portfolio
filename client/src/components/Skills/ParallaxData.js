@@ -211,8 +211,13 @@ const parallaxGraphQL = [
       },
       {
         startValue: 0,
-        endValue: -120,
+        endValue: -200,
         property: "translateY"
+      },
+      {
+        startValue: 0,
+        endValue: 120,
+        property: "rotateY"
       }
     ]
   }
@@ -327,7 +332,7 @@ const parallaxFirebase = [
   {
     start: "self",
     end: "self",
-    startOffset: "40vh",
+    startOffset: "43vh",
     endOffset: "120vh",
     properties: [
       {
@@ -452,7 +457,7 @@ const parallaxNetlify = [
   {
     start: "self",
     end: "self",
-    startOffset: "40vh",
+    startOffset: "43vh",
     endOffset: "110vh",
     properties: [
       {

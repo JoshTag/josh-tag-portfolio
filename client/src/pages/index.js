@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Hero from "../components/Hero"
 import ProjectPreview from "../components/ProjectPreview"
 import Skills from "../components/Skills"
+import Footer from "../components/Footer"
 import styled from "styled-components"
 
 const ProjectContainer = styled.section`
@@ -99,6 +100,7 @@ export default () => {
         }).reverse()}
       </ProjectContainer>
       <Skills />
+      <Footer />
     </Layout>
   )
 }

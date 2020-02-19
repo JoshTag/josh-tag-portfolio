@@ -1,7 +1,6 @@
 import React from "react"
 import Plx from "react-plx"
 import styled from "styled-components"
-import "./Skills.scss"
 
 // img imports
 import css from "./../../Asset/Icons/css3-original-wordmark.svg"
@@ -40,7 +39,7 @@ import {
 
 const SkillContainer = styled.section`
   padding-top: 10rem;
-  background-color: #ece9e6;
+  background: #F5F5F5;
   overflow: hidden;
 `
 

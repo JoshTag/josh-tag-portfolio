@@ -13,7 +13,7 @@
     "slug": "project-2",
     "url": "https://webdev-slayer.netlify.com/",
     "gitHubURL": "https://github.com/JoshTag/web-slayr",
-    "image": "./images/webslayer-mockup.png",
+    "image": "./images/webdevslayer-mockup.png",
     "description": "A turn based game fighting game with a web developer theme.  You start as a junior dev and go through the caves of code to fight your way through until you face the final super developer boss.",
     "tags": "VueJS, JavaScript, Sketch"
   },
