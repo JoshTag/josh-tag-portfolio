@@ -3,8 +3,9 @@ import styled from "styled-components"
 import resume from "../../Asset/Resume/Joshua_Taguicana_Resume.pdf"
 
 const FooterContainer = styled.footer`
-  height: 70vh;
+  height: 75vh;
   background: #121212;
+  position: relative;
 `
 
 const FooterTitle = styled.h2`
@@ -32,6 +33,7 @@ const FooterLinks = styled.a`
   color: #fff;
   font-size: 2rem;
   margin: 1rem 2rem;
+  /* width: 40%; */
   @media (min-width: 48rem) {
     font-size: 2.5rem;
     margin: 1.5rem 10rem;
@@ -39,6 +41,18 @@ const FooterLinks = styled.a`
   @media (min-width: 64rem) {
     font-size: 3rem;
   }
+`
+
+const FooterSub = styled.small`
+  height: 7vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 1rem;
+  color: #fff;
 `
 
 const Footer = () => {
@@ -55,6 +69,7 @@ const Footer = () => {
         </FooterLinks>
         <FooterLinks href="mailto:joshtaguicana@gmail.com">Email</FooterLinks>
       </LinkContainer>
+      <FooterSub>&copy; 2020 Joshua Taguicana</FooterSub>
     </FooterContainer>
   )
 }

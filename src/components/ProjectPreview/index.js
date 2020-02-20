@@ -1,11 +1,11 @@
 import React from "react"
 import Image from "gatsby-image"
 import styled, {keyframes} from "styled-components"
-import dragon from "./../../Asset/Images/dragon.svg"
-import corgi from "./../../Asset/Images/corgi.svg"
-import corgiButt from "./../../Asset/Images/corgi-butt.svg"
-import millenniumFalcon from "./../../Asset/Images/millennium-falcon.svg"
-import token from "./../../Asset/Images/token.svg"
+import dragon from "../../Asset/Images/dragon.svg"
+import corgi from "../../Asset/Images/corgi.svg"
+import corgiButt from "../../Asset/Images/corgi-butt.svg"
+import millenniumFalcon from "../../Asset/Images/millennium-falcon.svg"
+import token from "../../Asset/Images/token.svg"
 
 const spin = keyframes`
   0% {
