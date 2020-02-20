@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import resume from "../../Asset/Resume/Joshua_Taguicana_Resume.pdf"
+import resume from "../../assets/Resume/Joshua_Taguicana_Resume.pdf"
 
 const FooterContainer = styled.footer`
   height: 75vh;
