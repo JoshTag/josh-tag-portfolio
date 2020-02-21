@@ -150,6 +150,7 @@ const Project = styled.article`
   transition: 0.4s;
   :hover {
     transform: translateY(-5px);
+    box-shadow: 0 14px 30px -3px rgba(0, 0, 0, 0.5);
   }
   :hover #project-1-hover {
     animation: ${spin} 3.2s ease-in-out infinite;
@@ -233,7 +234,7 @@ const ProjectButtons = styled.a`
   position: relative;
   :hover {
     cursor: pointer;
-    box-shadow: 0 6px 20px -1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 20px -1px rgba(0, 0, 0, 0.5);
   }
   :after {
     background: #fff;
@@ -337,8 +338,8 @@ const ProjectPreview = ({
         <ProjectTitle>{title.toUpperCase()}</ProjectTitle>
         <ProjectDescription>{description}</ProjectDescription>
         <BtnContainer>
-          <ProjectButtons href={url}>Live Site</ProjectButtons>
-          <ProjectButtons href={gitHubURL}>Git Repo</ProjectButtons>
+          <ProjectButtons target="_blank" href={url}>Live Site</ProjectButtons>
+          <ProjectButtons target="_blank" href={gitHubURL}>Git Repo</ProjectButtons>
         </BtnContainer>
       </ProjectDetailsLeft>
       <ProjectDetailsRight>

@@ -82,13 +82,8 @@ export default () => {
       <ProjectContainer>
         <ProjectTitle>Projects</ProjectTitle>
         {projects.map(({ node: project }, index) => {
-          const title = project.title
-          const description = project.description
-          const slug = project.slug
+          const { title, description, slug, url, gitHubURL, tags } = project
           const imageData = project.image.childImageSharp.fluid
-          const url = project.url
-          const gitHubURL = project.gitHubURL
-          const tags = project.tags
 
           return (
             <ProjectPreview

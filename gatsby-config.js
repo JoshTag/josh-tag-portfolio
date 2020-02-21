@@ -17,7 +17,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Joshua Taguicana Portfolio`,
-        short_name: `GatsbyJS`,
+        short_name: `Josh Portfolio`,
         start_url: `/`,
         background_color: `#005FFF`,
         theme_color: `#121212`,
