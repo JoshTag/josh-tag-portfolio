@@ -61,7 +61,7 @@ const IconContainer = styled.div`
   height: 38rem;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   justify-items: center;
   position: relative;
   margin: 3rem auto;
@@ -82,6 +82,7 @@ const IconContainer = styled.div`
 const PlxLayer = styled(Plx)`
   height: 75px;
   width: 75px;
+  margin: auto;
   @media (min-width: 30rem) {
     height: 95px;
     width: 95px;
@@ -91,8 +92,9 @@ const PlxLayer = styled(Plx)`
     width: 120px;
   }
   @media (min-width: 64rem) {
-    height: 160px;
-    width: 160px;
+    height: 130px;
+    width: 130px;
+    margin: 0 1rem;
   }
 `
 
@@ -109,8 +111,8 @@ const Icons = styled.img`
     width: 120px;
   }
   @media (min-width: 64rem) {
-    height: 160px;
-    width: 160px;
+    height: 130px;
+    width: 130px;
   }
 `
 
@@ -119,11 +121,11 @@ const Skills = () => {
     <SkillContainer>
       <SkillTitle>Skills</SkillTitle>
       <IconContainer>
-        <PlxLayer parallaxData={parallaxCSS}>
-          <Icons src={css} alt="CSS" />
-        </PlxLayer>
         <PlxLayer parallaxData={parallaxHTML}>
           <Icons src={html} alt="HTML" />
+        </PlxLayer>
+        <PlxLayer parallaxData={parallaxCSS}>
+          <Icons src={css} alt="CSS" />
         </PlxLayer>
         <PlxLayer parallaxData={parallaxGit}>
           <Icons src={git} alt="Git" />

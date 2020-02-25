@@ -34,8 +34,21 @@ module.exports = {
             sizes: `144x144`,
             type: `image/png`,
           },
+          {
+            src: `icons/icon-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
         ],
       },
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.joshtag.com',
+        sitemap: 'https://www.joshtag.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+     },
   ]
 }

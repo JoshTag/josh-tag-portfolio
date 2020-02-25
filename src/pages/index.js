@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { Helmet } from "react-helmet"
 import Layout from "../components/Layout/layout"
 import Hero from "../components/Hero"
 import ProjectPreview from "../components/ProjectPreview"
@@ -74,10 +73,6 @@ export default () => {
 
   return (
     <Layout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Joshua Taguicana</title>
-      </Helmet>
       <Hero />
       <ProjectContainer>
         <ProjectTitle>Projects</ProjectTitle>
