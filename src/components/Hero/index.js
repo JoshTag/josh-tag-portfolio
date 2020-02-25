@@ -14,7 +14,6 @@ const HeroContainer = styled.section`
   );
   overflow: hidden;
   height: 160vh;
-
 `
 
 const AboutContainer = styled.article`
@@ -68,7 +67,7 @@ const parallax = [
     properties: [
       {
         startValue: 0,
-        endValue: -800,
+        endValue: -300,
         property: "translateY",
       },
     ],
@@ -83,7 +82,7 @@ const aboutPlx = [
     properties: [
       {
         startValue: 0,
-        endValue: -2400,
+        endValue: -1800,
         property: "translateY",
       },
     ],
