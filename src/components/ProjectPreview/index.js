@@ -338,8 +338,12 @@ const ProjectPreview = ({
         <ProjectTitle>{title.toUpperCase()}</ProjectTitle>
         <ProjectDescription>{description}</ProjectDescription>
         <BtnContainer>
-          <ProjectButtons target="_blank" href={url}>Live Site</ProjectButtons>
-          <ProjectButtons target="_blank" href={gitHubURL}>Git Repo</ProjectButtons>
+          <ProjectButtons target="_blank" rel="noopener" href={url}>
+            Live Site
+          </ProjectButtons>
+          <ProjectButtons target="_blank" rel="noopener" href={gitHubURL}>
+            Git Repo
+          </ProjectButtons>
         </BtnContainer>
       </ProjectDetailsLeft>
       <ProjectDetailsRight>
