@@ -3,43 +3,68 @@ import styled from "styled-components"
 import resume from "../../assets/Resume/Joshua_Taguicana_Resume.pdf"
 
 const FooterContainer = styled.footer`
-  height: 75vh;
+  height: 70vh;
   background: #121212;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 37.5rem) {
+    height: 50vh;
+  }
 `
 
 const FooterTitle = styled.h2`
   color: #fff;
-  font-size: 4rem;
+  font-size: 2rem;
   padding-top: 3rem;
   margin: 0 2rem 3rem;
+  width: 18rem;
+  text-align: center;
+  @media (min-width: 37.5rem) {
+    width: 20rem;
+  }
   @media (min-width: 48rem) {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     margin: 0 10rem 4rem;
+    width: 38rem;
   }
   @media (min-width: 64rem) {
     font-size: 3.5rem;
-    margin: 0 10rem 4rem;
+    margin: 0 10rem 3rem;
+    width: 52rem;
   }
 `
 
 const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 18rem;
+  @media (min-width: 37.5rem) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20rem;
+  }
+  @media (min-width: 48rem) {
+    width: 30rem;
+  }
 `
 
 const FooterLinks = styled.a`
   text-decoration: none;
   color: #fff;
-  font-size: 2rem;
-  margin: 1rem 2rem;
-  /* width: 40%; */
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
   @media (min-width: 48rem) {
-    font-size: 2.5rem;
-    margin: 1.5rem 10rem;
+    font-size: 1.5rem;
   }
   @media (min-width: 64rem) {
-    font-size: 3rem;
+    font-size: 1.7rem;
+    width: 100px;
   }
 `
 

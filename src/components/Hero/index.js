@@ -23,8 +23,6 @@ const AboutContainer = styled.article`
   width: 16rem;
   margin: 0 auto;
   bottom: -90vh;
-  /* transform: translateX(-50%);
-  left: 50%; */
   @media (min-width: 48rem) {
     width: 34rem;
   }
