@@ -75,7 +75,7 @@ const IconContainer = styled.div`
   }
   @media (min-width: 64rem) {
     width: 52rem;
-    height: 35rem;
+    height: 30rem;
   }
 `
 

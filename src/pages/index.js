@@ -9,25 +9,25 @@ import styled from "styled-components"
 
 const ProjectContainer = styled.section`
   position: relative;
-  color: #FFF;
+  color: #fff;
   padding: 1rem 0 2rem;
   :before {
     content: "";
     position: absolute;
-    background: #FFF;
+    background: #fff;
     top: -119px;
     width: 100%;
     height: 120px;
-    clip-path: polygon(100% 0%,-2% 100%,100% 100%)
+    clip-path: polygon(100% 0%, -2% 100%, 100% 100%);
   }
   :after {
     content: "";
     position: absolute;
-    background: #FFF;
+    background: #fff;
     bottom: -119px;
     width: 100%;
     height: 120px;
-    clip-path: polygon(0 0,0 100%,102% 0);
+    clip-path: polygon(0 0, 0 100%, 102% 0);
   }
 `
 const ProjectTitle = styled.h2`
@@ -69,30 +69,32 @@ export default () => {
     }
   `)
 
-  const projects = data.allConfigJson.edges;
+  const projects = data.allConfigJson.edges
 
   return (
     <Layout>
       <Hero />
       <ProjectContainer>
         <ProjectTitle>Projects</ProjectTitle>
-        {projects.map(({ node: project }, index) => {
-          const { title, description, slug, url, gitHubURL, tags } = project
-          const imageData = project.image.childImageSharp.fluid
+        {projects
+          .map(({ node: project }, index) => {
+            const { title, description, slug, url, gitHubURL, tags } = project
+            const imageData = project.image.childImageSharp.fluid
 
-          return (
-            <ProjectPreview
-              key={index}
-              title={title}
-              description={description}
-              imageData={imageData}
-              slug={slug}
-              url={url}
-              gitHubURL={gitHubURL}
-              tags={tags}
-            />
-          )
-        }).reverse()}
+            return (
+              <ProjectPreview
+                key={index}
+                title={title}
+                description={description}
+                imageData={imageData}
+                slug={slug}
+                url={url}
+                gitHubURL={gitHubURL}
+                tags={tags}
+              />
+            )
+          })
+          .reverse()}
       </ProjectContainer>
       <Skills />
       <Footer />

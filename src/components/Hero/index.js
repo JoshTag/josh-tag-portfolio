@@ -5,7 +5,6 @@ import Title from "./Title"
 import Plx from "react-plx"
 
 const HeroContainer = styled.section`
-  position: relative;
   background: radial-gradient(
     ellipse at bottom,
     #002f69 0%,
@@ -13,14 +12,19 @@ const HeroContainer = styled.section`
     #000000 100%
   );
   overflow: hidden;
-  height: 160vh;
+  height: 150vh;
+  @media (min-width: 48rem) {
+    height: 170vh;
+  }
 `
 
 const AboutContainer = styled.article`
   position: relative;
   width: 16rem;
   margin: 0 auto;
-  bottom: -80vh;
+  bottom: -90vh;
+  /* transform: translateX(-50%);
+  left: 50%; */
   @media (min-width: 48rem) {
     width: 34rem;
   }
@@ -62,12 +66,12 @@ const parallax = [
   {
     start: "self",
     end: "self",
-    endOffset: 1400,
-    easing: "easeOutQuad",
+    endOffset: "200vh",
+    easing: "easeInOutQuad",
     properties: [
       {
-        startValue: 0,
-        endValue: -300,
+        startValue: 250,
+        endValue: -500,
         property: "translateY",
       },
     ],
@@ -78,15 +82,16 @@ const aboutPlx = [
   {
     start: "self",
     end: "self",
-    endOffset: "160vh",
+    endOffset: "270vh",
+    easing: "easeInOutQuad",
     properties: [
       {
         startValue: 0,
-        endValue: -1800,
+        endValue: -2800,
         property: "translateY",
       },
     ],
-  }
+  },
 ]
 
 class Hero extends Component {
