@@ -1,7 +1,16 @@
 [
   {
-    "title": "Warcraft Auctions",
+    "title": "Animations",
     "slug": "project-1",
+    "url": "https://joshtag.github.io/animations/",
+    "gitHubURL": "https://github.com/JoshTag/animations",
+    "image": "./images/lanterns.png",
+    "description": "A small site used to experiment and showcase some simple animations",
+    "tags": "HTML, CSS, JavaScript, Animations"
+  },
+  {
+    "title": "Warcraft Auctions",
+    "slug": "project-2",
     "url": "https://warcraftauctions.netlify.com/",
     "gitHubURL": "https://github.com/JoshTag/warcraft-auctions",
     "image": "./images/wow-mockup.png",
@@ -10,7 +19,7 @@
   },
   {
     "title": "Webdev Slayer",
-    "slug": "project-2",
+    "slug": "project-3",
     "url": "https://webdev-slayer.netlify.com/",
     "gitHubURL": "https://github.com/JoshTag/web-slayr",
     "image": "./images/webdevslayer-mockup.png",
@@ -19,7 +28,7 @@
   },
   {
     "title": "Star Wars Database",
-    "slug": "project-3",
+    "slug": "project-4",
     "url": "https://starwars-database.netlify.com/",
     "gitHubURL": "https://github.com/JoshTag/starwars-database",
     "image": "./images/starwars-mockup.png",
@@ -28,7 +37,7 @@
   },
   {
     "title": "Dog Hot Dog",
-    "slug": "project-4",
+    "slug": "project-5",
     "url": "https://corgisarethebest.netlify.com/",
     "gitHubURL": "https://github.com/JoshTag/dog-hot-dog",
     "image": "./images/doghotdog-mockup.png",

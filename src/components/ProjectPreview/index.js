@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "gatsby-image"
-import styled, {keyframes} from "styled-components"
+import styled, { keyframes } from "styled-components"
 import dragon from "../../assets/Images/dragon.svg"
 import corgi from "../../assets/Images/corgi.svg"
 import corgiButt from "../../assets/Images/corgi-butt.svg"
@@ -66,9 +66,10 @@ const twerk = keyframes`
 `
 
 const projectTheme = {
-  "Warcraft Auctions": {
-    bg: "linear-gradient(270deg, #5CB2FF 0%, #005DFF 100%)",
-    bs: "0 14px 20px -6px rgba(0,89,255,0.50), 0 14px 20px -6px rgba(0,0,0,0.50)",
+  Animations: {
+    bg: "linear-gradient(90deg, #8A2387 0%, #E94057 48%, #F27121 100%)",
+    bs:
+      "0 14px 20px -6px rgba(0,89,255,0.50), 0 14px 20px -6px rgba(0,0,0,0.50)",
     img: token,
     mockup: {
       width: "80px",
@@ -76,12 +77,27 @@ const projectTheme = {
       bottom: "1.5rem",
       bottomLarge: "2.5rem",
       left: "11rem",
-      leftLarge: "15rem"
+      leftLarge: "15rem",
+    },
+  },
+  "Warcraft Auctions": {
+    bg: "linear-gradient(270deg, #5CB2FF 0%, #005DFF 100%)",
+    bs:
+      "0 14px 20px -6px rgba(0,89,255,0.50), 0 14px 20px -6px rgba(0,0,0,0.50)",
+    img: token,
+    mockup: {
+      width: "80px",
+      widthLarge: "100px",
+      bottom: "1.5rem",
+      bottomLarge: "2.5rem",
+      left: "11rem",
+      leftLarge: "15rem",
     },
   },
   "Webdev Slayer": {
     bg: "linear-gradient(270deg, #A922FF 0%, #611EFF 100%)",
-    bs: "0 14px 20px -5px rgba(73,0,255,0.50), 0 14px 20px -5px rgba(0,0,0,0.50)",
+    bs:
+      "0 14px 20px -5px rgba(73,0,255,0.50), 0 14px 20px -5px rgba(0,0,0,0.50)",
     img: dragon,
     mockup: {
       width: "110px",
@@ -94,7 +110,8 @@ const projectTheme = {
   },
   "Star Wars Database": {
     bg: "linear-gradient(270deg, #324758 0%, #0F1723 100%)",
-    bs: "0 14px 20px -5px rgba(25,41,70,0.50), 0 14px 20px -5px rgba(0,0,0,0.50)",
+    bs:
+      "0 14px 20px -5px rgba(25,41,70,0.50), 0 14px 20px -5px rgba(0,0,0,0.50)",
     img: millenniumFalcon,
     mockup: {
       width: "130px",
@@ -106,8 +123,9 @@ const projectTheme = {
     },
   },
   "Dog Hot Dog": {
-    bg: "linear-gradient(270deg, #FFB400 0%, #FF5520 100%)",
-    bs: "0 14px 20px -5px rgba(255,82,0,0.50), 0 14px 20px -5px rgba(0,0,0,0.50)",
+    bg: "linear-gradient(270deg, #FFB400 0%, #F12711 100%)",
+    bs:
+      "0 14px 20px -5px rgba(255,82,0,0.50), 0 14px 20px -5px rgba(0,0,0,0.50)",
     img: {
       body: corgi,
       butt: corgiButt,
@@ -137,7 +155,6 @@ const projectTheme = {
   },
 }
 
-
 const Project = styled.article`
   width: 18rem;
   margin: 0 auto 3rem;
@@ -149,22 +166,24 @@ const Project = styled.article`
   background-image: ${props => props.bg};
   transition: 0.4s;
   :hover {
-    transform: translateY(-5px);
-    box-shadow: 0 14px 30px -3px rgba(0, 0, 0, 0.5);
+    transform: translateY(0);
   }
-  :hover #project-1-hover {
+  /* :hover #project-2-hover {
+    animation: ${spin} 3.2s ease-in-out infinite;
+  } */
+  :hover #project-2-hover {
     animation: ${spin} 3.2s ease-in-out infinite;
   }
-  :hover #project-2-hover {
+  :hover #project-3-hover {
     animation: ${shake} 2.5s linear infinite;
   }
-  :hover #project-3-hover {
+  :hover #project-4-hover {
     animation: ${float} 3.5s linear infinite;
   }
-  :hover #project-4-hover {
+  :hover #project-5-hover {
     animation: ${twerk} 6s infinite alternate;
   }
-  @media (min-width: 37.5rem) {
+  @media (min-width: 375px) {
     width: 20rem;
   }
   @media (min-width: 48rem) {
@@ -241,21 +260,21 @@ const ProjectButtons = styled.a`
     content: "";
     height: 155px;
     left: -75px;
-    opacity: .2;
+    opacity: 0.2;
     position: absolute;
     top: -50px;
     width: 50px;
     -webkit-transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
-            transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
     -webkit-transform: rotate(35deg);
-        -ms-transform: rotate(35deg);
-            transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
     z-index: -10;
   }
   :hover:after {
     left: 120%;
     -webkit-transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
-            transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
   }
   @media (min-width: 64rem) {
     margin: 0 1rem 0 0;
@@ -330,7 +349,7 @@ const ProjectPreview = ({
   imageData,
   url,
   tags,
-  slug
+  slug,
 }) => {
   return (
     <Project bg={projectTheme[title].bg}>
@@ -364,7 +383,7 @@ const ProjectPreview = ({
                 id={`${slug}-hover`}
               />
             </CorgiAsset>
-          ) : (
+          ) : title === "Animations" ? null : (
             <img
               id={`${slug}-hover`}
               src={projectTheme[title].img}
