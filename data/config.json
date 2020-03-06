@@ -4,7 +4,7 @@
     "slug": "project-1",
     "url": "https://joshtag.github.io/animations/",
     "gitHubURL": "https://github.com/JoshTag/animations",
-    "image": "./images/lanterns.png",
+    "image": "./images/lanterns-mockup.png",
     "description": "A small site used to experiment and showcase some simple animations",
     "tags": "HTML, CSS, JavaScript, Animations"
   },

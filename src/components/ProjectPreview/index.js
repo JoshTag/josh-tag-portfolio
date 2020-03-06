@@ -6,14 +6,17 @@ import corgi from "../../assets/Images/corgi.svg"
 import corgiButt from "../../assets/Images/corgi-butt.svg"
 import millenniumFalcon from "../../assets/Images/millennium-falcon.svg"
 import token from "../../assets/Images/token.svg"
+import lantern from "../../assets/Images/lantern.svg"
 
 const spin = keyframes`
   0% {
     transform: rotateY(0deg);
   }
-
-  50% {
+  25% {
     transform: rotateY(180deg);
+  }
+  50% {
+    transform: rotateY(360deg);
   }
   100% {
     transform: rotateY(360deg);
@@ -34,56 +37,80 @@ const shake = keyframes`
 `
 
 const float = keyframes`
-  0% {
+  0%, 10%, 20%, 30%, 40%, 50%, 100%  {
     transform: translateY(0);
   }
-  25% {
+  5%, 25%, 45% {
     transform: translateY(-7px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  75% {
+  } 
+  15%, 35% {
     transform: translateY(7px);
-  }
-  100% {
-    transform: translateY(0);
   }
 `
 
 const twerk = keyframes`
-  0%, 55% { transform: translate(2px, 1px) rotate(3deg); }
-  10%, 85% { transform: translate(-1px, -5px) rotate(-3deg); }
-  20%, 45% { transform: translate(-2px, 0px) rotate(4deg); }
-  30%, 95% { transform: translate(3px, 2px) rotate(0deg); }
-  40%, 35% { transform: translate(2px, -1px) rotate(3deg); }
-  50%, 75% { transform: translate(-1px, 2px) rotate(-4deg); }
-  60%, 25% { transform: translate(-2px, 1px) rotate(0deg); }
-  70%, 65% { transform: translate(2px, 1px) rotate(-4deg); }
-  80%, 15% { transform: translate(-1px, -3px) rotate(2deg); }
-  90%, 5% { transform: translate(1px, 2px) rotate(0deg); }
+  0% { transform: translate(2px, 1px) rotate(3deg); }
+  10% { transform: translate(-1px, -2px) rotate(-3deg); }
+  15% { transform: translate(-2px, 2px) rotate(-1deg); }
+  20% { transform: translate(-2px, 0px) rotate(4deg); }
+  25% { transform: translate(3px, 2px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  35% { transform: translate(2px, -2px) rotate(-4deg); }
+  40% { transform: translate(-2px, 1px) rotate(2deg); }
+  45% { transform: translate(1px, -2px) rotate(3deg); }
+  50% { transform: translate(-3px, 2px) rotate(-4deg); }
+  55% { transform: translate(-1px, 2px) rotate(2deg); }
+  60% { transform: translate(4px, -1px) rotate(-2deg); }
   100% { transform: translate(4px, -1px) rotate(-2deg); }
+`
+
+const glow = keyframes`
+  0% {
+    transform-origin: 50% 100%;
+    filter: drop-shadow(0 0 2rem #FFC100);
+    transform: rotate(0deg);
+  }
+  15% {
+    filter: drop-shadow(0 0 2rem #FFF);
+    transform: rotate(-7deg);
+  }
+  30% {
+    filter: drop-shadow(0 0 2rem #FFC100);
+    transform: rotate(0deg);
+  }
+  45% {
+    filter: drop-shadow(0 0 2rem #FFF);
+    transform: rotate(7deg);
+  }
+  60% {
+    transform-origin: 50% 100%;
+    filter: drop-shadow(0 0 2rem #FFC100);
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: 50% 100%;
+    filter: drop-shadow(0 0 2rem #FFC100);
+    transform: rotate(0deg);
+  }
 `
 
 const projectTheme = {
   Animations: {
-    bg: "linear-gradient(90deg, #8A2387 0%, #E94057 48%, #F27121 100%)",
-    bs:
-      "0 14px 20px -6px rgba(0,89,255,0.50), 0 14px 20px -6px rgba(0,0,0,0.50)",
-    img: token,
+    bg: "linear-gradient(270deg, #CF7AB3 0%, #794FD2 100%)",
+    bs: "0 10px 15px -3px rgba(0,0,0,0.50), 0 10px 15px -3px rgba(93,0,133,0.50)",
+    img: lantern,
     mockup: {
-      width: "80px",
-      widthLarge: "100px",
-      bottom: "1.5rem",
-      bottomLarge: "2.5rem",
-      left: "11rem",
-      leftLarge: "15rem",
+      width: "40px",
+      widthLarge: "80px",
+      bottom: "2rem",
+      bottomLarge: "4rem",
+      left: "1rem",
+      leftLarge: "1rem",
     },
   },
   "Warcraft Auctions": {
     bg: "linear-gradient(270deg, #5CB2FF 0%, #005DFF 100%)",
-    bs:
-      "0 14px 20px -6px rgba(0,89,255,0.50), 0 14px 20px -6px rgba(0,0,0,0.50)",
+    bs: "0 10px 15px -3px rgba(0,89,255,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
     img: token,
     mockup: {
       width: "80px",
@@ -96,8 +123,7 @@ const projectTheme = {
   },
   "Webdev Slayer": {
     bg: "linear-gradient(270deg, #A922FF 0%, #611EFF 100%)",
-    bs:
-      "0 14px 20px -5px rgba(73,0,255,0.50), 0 14px 20px -5px rgba(0,0,0,0.50)",
+    bs: "0 10px 15px -3px rgba(73,0,255,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
     img: dragon,
     mockup: {
       width: "110px",
@@ -110,8 +136,7 @@ const projectTheme = {
   },
   "Star Wars Database": {
     bg: "linear-gradient(270deg, #324758 0%, #0F1723 100%)",
-    bs:
-      "0 14px 20px -5px rgba(25,41,70,0.50), 0 14px 20px -5px rgba(0,0,0,0.50)",
+    bs: "0 10px 15px -3px rgba(25,41,70,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
     img: millenniumFalcon,
     mockup: {
       width: "130px",
@@ -124,8 +149,7 @@ const projectTheme = {
   },
   "Dog Hot Dog": {
     bg: "linear-gradient(270deg, #FFB400 0%, #F12711 100%)",
-    bs:
-      "0 14px 20px -5px rgba(255,82,0,0.50), 0 14px 20px -5px rgba(0,0,0,0.50)",
+    bs: "0 10px 15px -3px rgba(255,82,0,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
     img: {
       body: corgi,
       butt: corgiButt,
@@ -137,7 +161,7 @@ const projectTheme = {
       left: "-.2rem",
       body: {
         width: "130px",
-        widthLarge: "180px",
+        widthLarge: "185px",
         bottom: "rem",
         bottomLarge: "2rem",
         left: "3.75rem",
@@ -147,9 +171,9 @@ const projectTheme = {
         width: "65px",
         widthLarge: "100px",
         bottom: ".7rem",
-        bottomLarge: ".8rem",
+        bottomLarge: ".9rem",
         left: "-.5rem",
-        leftLarge: "-.8rem",
+        leftLarge: "-.75rem",
       },
     },
   },
@@ -162,26 +186,27 @@ const Project = styled.article`
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 14px -5px rgba(0, 0, 0, 0.4);
   background-image: ${props => props.bg};
-  transition: 0.4s;
+  transition: 0.3s;
   :hover {
-    transform: translateY(0);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px -5px rgba(0, 0, 0, 0.5);
   }
-  /* :hover #project-2-hover {
-    animation: ${spin} 3.2s ease-in-out infinite;
-  } */
-  :hover #project-2-hover {
-    animation: ${spin} 3.2s ease-in-out infinite;
+  #project-1-hover {
+    animation: ${glow} 5s linear infinite;
   }
-  :hover #project-3-hover {
-    animation: ${shake} 2.5s linear infinite;
+  #project-2-hover {
+    animation: ${spin} 5.5s linear infinite;
   }
-  :hover #project-4-hover {
-    animation: ${float} 3.5s linear infinite;
+  #project-3-hover {
+    animation: ${shake} 5s linear infinite;
   }
-  :hover #project-5-hover {
-    animation: ${twerk} 6s infinite alternate;
+  #project-4-hover {
+    animation: ${float} 8s linear infinite;
+  }
+  #project-5-hover {
+    animation: ${twerk} 5s infinite alternate;
   }
   @media (min-width: 375px) {
     width: 20rem;
@@ -367,6 +392,7 @@ const ProjectPreview = ({
       </ProjectDetailsLeft>
       <ProjectDetailsRight>
         <ProjectMockup
+          id={`${slug}-hover`}
           fluid={imageData}
           fadeIn={true}
           title={title}
@@ -383,7 +409,7 @@ const ProjectPreview = ({
                 id={`${slug}-hover`}
               />
             </CorgiAsset>
-          ) : title === "Animations" ? null : (
+          ) : (
             <img
               id={`${slug}-hover`}
               src={projectTheme[title].img}
