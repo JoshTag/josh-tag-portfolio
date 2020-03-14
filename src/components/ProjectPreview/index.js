@@ -97,7 +97,7 @@ const glow = keyframes`
 const projectTheme = {
   Animations: {
     bg: "linear-gradient(270deg, #CF7AB3 0%, #794FD2 100%)",
-    bs: "0 10px 15px -3px rgba(0,0,0,0.50), 0 10px 15px -3px rgba(93,0,133,0.50)",
+    bs: "0 10px 15px -3px rgba(93,0,133,0.50), 0 10px 15px -3px rgba(0,0,0,0.50), ",
     img: lantern,
     mockup: {
       width: "40px",
@@ -211,11 +211,15 @@ const Project = styled.article`
   @media (min-width: 375px) {
     width: 20rem;
   }
+  @media (min-width: 38rem) {
+    width: 22rem;
+    padding: 1rem 2rem;
+  }
   @media (min-width: 48rem) {
     width: 38rem;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
   }
   @media (min-width: 64rem) {
     width: 52rem;

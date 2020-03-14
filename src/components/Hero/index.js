@@ -68,7 +68,7 @@ const parallax = [
     easing: "easeInOutQuad",
     properties: [
       {
-        startValue: 250,
+        startValue: 230,
         endValue: -500,
         property: "translateY",
       },
@@ -80,12 +80,12 @@ const aboutPlx = [
   {
     start: "self",
     end: "self",
-    endOffset: "270vh",
+    endOffset: "240vh",
     easing: "easeInOutQuad",
     properties: [
       {
         startValue: 0,
-        endValue: -2800,
+        endValue: -3500,
         property: "translateY",
       },
     ],
