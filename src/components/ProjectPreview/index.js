@@ -109,7 +109,7 @@ const projectTheme = {
     },
   },
   "Warcraft Auctions": {
-    bg: "linear-gradient(270deg, #5CB2FF 0%, #005DFF 100%)",
+    bg: "linear-gradient(270deg, #00ADFF 0%, #0053FF 100%)",
     bs: "0 10px 15px -3px rgba(0,89,255,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
     img: token,
     mockup: {

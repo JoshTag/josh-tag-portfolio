@@ -80,12 +80,12 @@ const aboutPlx = [
   {
     start: "self",
     end: "self",
-    endOffset: "240vh",
+    endOffset: "200vh",
     easing: "easeInOutQuad",
     properties: [
       {
         startValue: 0,
-        endValue: -3500,
+        endValue: -1000,
         property: "translateY",
       },
     ],
@@ -108,8 +108,9 @@ class Hero extends Component {
             <AboutDescription>
               I'm a new web developer dedicated to building creative websites
               and continuing to learn new skills in web development. Currently
-              working as a TA at BrainStation, but looking for new
-              opportunities! Check out some of my projects below!
+              working as a TA at BrainStation, but looking for new employment
+              opportunities as well as freelance projects! Check out some of 
+              my projects below!
             </AboutDescription>
           </AboutContainer>
         </Plx>
