@@ -1,4 +1,4 @@
-# Joshua Taguicana Profile Site
+# Joshua Taguicana Portfolio Site
 
 Portfolio site for Joshua Taguicana.  Built with Gatsby and deloyed with netlify.
 
