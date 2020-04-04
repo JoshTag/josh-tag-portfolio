@@ -1,16 +1,32 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      site {
+        siteMetadata {
+          title
+          description
+          keywords
+        }
+      }
+    }
+  `)
+
+  const siteMetadata = data.site.siteMetadata
+  const { title, description, keywords } = siteMetadata
+
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <meta name="description" content="Portfolio site for Joshua Taguicana - Software Developer"/>
-        <meta name="keywords" content="Software Developer, Web Design, Front-End, Back-End, Programmer, HTML, CSS, JavaScript, React, Vue, Gatsby"/>
+        <meta name="description" content={description}/>
+        <meta name="keywords" content={keywords}/>
         <html lang="en"/>
-        <title>Joshua Taguicana</title>
+        <title>{title}</title>
       </Helmet>
       <main>{children}</main>
     </>
