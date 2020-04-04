@@ -22,7 +22,7 @@ module.exports = {
         background_color: `#005FFF`,
         theme_color: `#121212`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: `src/icons/icon.png`,
         icons: [
           {
             src: `icons/icon-192x192.png`,

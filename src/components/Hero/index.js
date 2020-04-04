@@ -1,8 +1,8 @@
-import React, { Component } from "react"
+import React from "react"
 import "./Hero.scss"
 import styled from "styled-components"
 import Title from "./Title"
-import Plx from "react-plx"
+import { ParallaxLayer } from "react-spring/renderprops-addons"
 
 const HeroContainer = styled.section`
   background: radial-gradient(
@@ -12,23 +12,27 @@ const HeroContainer = styled.section`
     #000000 100%
   );
   overflow: hidden;
-  height: 150vh;
+  height: 140vh;
+  position: relative;
   @media (min-width: 48rem) {
-    height: 170vh;
+    height: 150vh;
   }
 `
 
-const AboutContainer = styled.article`
-  position: relative;
+const AboutContainer = styled.div`
+  position: absolute;
   width: 16rem;
-  margin: 0 auto;
-  bottom: -90vh;
+  margin: auto auto 0;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
   @media (min-width: 48rem) {
     width: 34rem;
   }
   @media (min-width: 64rem) {
     width: 50rem;
     font-size: 3.5rem;
+    bottom: 12rem;
   }
 `
 
@@ -60,63 +64,28 @@ const AboutDescription = styled.p`
   }
 `
 
-const parallax = [
-  {
-    start: "self",
-    end: "self",
-    endOffset: "200vh",
-    easing: "easeInOutQuad",
-    properties: [
-      {
-        startValue: 230,
-        endValue: -500,
-        property: "translateY",
-      },
-    ],
-  },
-]
-
-const aboutPlx = [
-  {
-    start: "self",
-    end: "self",
-    endOffset: "200vh",
-    easing: "easeInOutQuad",
-    properties: [
-      {
-        startValue: 0,
-        endValue: -1000,
-        property: "translateY",
-      },
-    ],
-  },
-]
-
-class Hero extends Component {
-  render() {
-    return (
-      <HeroContainer>
-        <div id="stars" />
-        <div id="stars2" />
-        <div id="stars3" />
-        <Plx parallaxData={parallax}>
-          <Title />
-        </Plx>
-        <Plx parallaxData={aboutPlx}>
-          <AboutContainer>
-            <AboutTitle>About</AboutTitle>
-            <AboutDescription>
-              I'm a new web developer dedicated to building creative websites
-              and continuing to learn new skills in web development. Currently
-              working as a TA at BrainStation, but looking for new employment
-              opportunities as well as freelance projects! Check out some of 
-              my projects below!
-            </AboutDescription>
-          </AboutContainer>
-        </Plx>
-      </HeroContainer>
-    )
-  }
+const Hero = () => {
+  return (
+    <HeroContainer>
+      <div id="stars1" />
+      <div id="stars2" />
+      <div id="stars3" />
+      <ParallaxLayer offset={0} speed={0.6}>
+        <Title />
+      </ParallaxLayer>
+      <ParallaxLayer offset={.75} speed={0.4}>
+      <AboutContainer>
+        <AboutTitle>About</AboutTitle>
+        <AboutDescription>
+          I'm a new web developer dedicated to building creative websites and
+          continuing to learn new skills in web development. Looking for new
+          employment opportunities as well as freelance projects! Check out some
+          of my projects below!
+        </AboutDescription>
+      </AboutContainer>
+      </ParallaxLayer>
+    </HeroContainer>
+  )
 }
 
 export default Hero

@@ -6,12 +6,22 @@ import ProjectPreview from "../components/ProjectPreview"
 import Skills from "../components/Skills"
 import Footer from "../components/Footer"
 import styled from "styled-components"
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 
 const ProjectContainer = styled.section`
   position: relative;
   color: #fff;
   padding: 1rem 0 2rem;
-  :before {
+  height: 155rem;
+  background-color: #696969;
+  @media (min-width: 48rem) {
+    height: 105rem;
+  }
+  @media (min-width: 64rem) {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+  }
+  /* :before {
     content: "";
     position: absolute;
     background: #fff;
@@ -28,7 +38,7 @@ const ProjectContainer = styled.section`
     width: 100%;
     height: 120px;
     clip-path: polygon(0 0, 0 100%, 102% 0);
-  }
+  } */
 `
 const ProjectTitle = styled.h2`
   font-size: 2rem;
@@ -72,10 +82,14 @@ export default () => {
   const projects = data.allConfigJson.edges
 
   return (
-    <Layout>
-      <Hero />
+    <Layout >
+      <Parallax pages={5}>
+      <Hero/>
       <ProjectContainer>
-        <ProjectTitle>Projects</ProjectTitle>
+        <ParallaxLayer offset={0.4} speed={0.3}>
+          <ProjectTitle>Projects</ProjectTitle>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0.5} speed={0.3}>
         {projects
           .map(({ node: project }, index) => {
             const { title, description, slug, url, gitHubURL, tags } = project
@@ -95,9 +109,11 @@ export default () => {
             )
           })
           .reverse()}
+      </ParallaxLayer>
       </ProjectContainer>
       <Skills />
       <Footer />
+      </Parallax>
     </Layout>
   )
 }

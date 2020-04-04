@@ -190,7 +190,7 @@ const Project = styled.article`
   background-image: ${props => props.bg};
   transition: 0.3s;
   :hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 0 14px 30px -5px rgba(0, 0, 0, 0.5);
   }
   #project-1-hover {

@@ -52,12 +52,12 @@ const Title = () => {
   `
   const SVGContainer = styled.svg`
     width: 70%;
-    margin: 0 15% 0;
+    margin: 30vh 15% 0;
     opacity: 0;
     animation: ${hide} .1s .2s forwards;
     @media (min-width: 48rem) {
       width: 60%;
-      margin: 0 20% 0;
+      margin: 30vh 20% 0;
   }
   `
   return (
