@@ -1,11 +1,11 @@
 [
   {
-    "title": "Animations",
+    "title": "Animations and CSS Tricks",
     "slug": "project-1",
     "url": "https://joshtag.github.io/animations/",
     "gitHubURL": "https://github.com/JoshTag/animations",
     "image": "./images/lanterns-mockup.png",
-    "description": "A small site used to experiment and showcase some simple animations",
+    "description": "A small site used to experiment and showcase some simple animations and as well as css tricks",
     "tags": "HTML, CSS, JavaScript, Animations"
   },
   {

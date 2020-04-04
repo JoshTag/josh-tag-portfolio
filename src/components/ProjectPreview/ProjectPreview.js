@@ -95,9 +95,10 @@ const glow = keyframes`
 `
 
 const projectTheme = {
-  Animations: {
+  "Animations and CSS Tricks": {
     bg: "linear-gradient(270deg, #CF7AB3 0%, #794FD2 100%)",
-    bs: "0 10px 15px -3px rgba(93,0,133,0.50), 0 10px 15px -3px rgba(0,0,0,0.50), ",
+    bs:
+      "0 10px 15px -3px rgba(93,0,133,0.50), 0 10px 15px -3px rgba(0,0,0,0.50), ",
     img: lantern,
     mockup: {
       width: "40px",
@@ -110,7 +111,8 @@ const projectTheme = {
   },
   "Warcraft Auctions": {
     bg: "linear-gradient(270deg, #00ADFF 0%, #0053FF 100%)",
-    bs: "0 10px 15px -3px rgba(0,89,255,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
+    bs:
+      "0 10px 15px -3px rgba(0,89,255,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
     img: token,
     mockup: {
       width: "80px",
@@ -123,7 +125,8 @@ const projectTheme = {
   },
   "Webdev Slayer": {
     bg: "linear-gradient(270deg, #A922FF 0%, #611EFF 100%)",
-    bs: "0 10px 15px -3px rgba(73,0,255,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
+    bs:
+      "0 10px 15px -3px rgba(73,0,255,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
     img: dragon,
     mockup: {
       width: "110px",
@@ -136,7 +139,8 @@ const projectTheme = {
   },
   "Star Wars Database": {
     bg: "linear-gradient(270deg, #324758 0%, #0F1723 100%)",
-    bs: "0 10px 15px -3px rgba(25,41,70,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
+    bs:
+      "0 10px 15px -3px rgba(25,41,70,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
     img: millenniumFalcon,
     mockup: {
       width: "130px",
@@ -149,7 +153,8 @@ const projectTheme = {
   },
   "Dog Hot Dog": {
     bg: "linear-gradient(270deg, #FFB400 0%, #F12711 100%)",
-    bs: "0 10px 15px -3px rgba(255,82,0,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
+    bs:
+      "0 10px 15px -3px rgba(255,82,0,0.50), 0 10px 15px -3px rgba(0,0,0,0.50)",
     img: {
       body: corgi,
       butt: corgiButt,

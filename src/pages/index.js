@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Layout from "../components/Layout"
-import Hero from "../components/Hero"
-import ProjectPreview from "../components/ProjectPreview"
-import Skills from "../components/Skills"
-import Footer from "../components/Footer"
+import Layout from "../components/Layout/Layout"
+import Hero from "../components/Hero/Hero"
+import ProjectPreview from "../components/ProjectPreview/ProjectPreview"
+import Skills from "../components/Skills/Skills"
+import Footer from "../components/Footer/Footer"
 import styled from "styled-components"
 
 const ProjectContainer = styled.section`
@@ -45,6 +45,11 @@ const ProjectTitle = styled.h2`
 `
 
 export default () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const data = useStaticQuery(graphql`
     {
       allConfigJson {

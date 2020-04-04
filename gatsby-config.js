@@ -20,9 +20,9 @@ module.exports = {
         short_name: `Josh Portfolio`,
         start_url: `/`,
         background_color: `#005FFF`,
-        theme_color: `#121212`,
+        theme_color: `#005FFF`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: `src/icons/icon.png`,
         icons: [
           {
             src: `icons/icon-192x192.png`,

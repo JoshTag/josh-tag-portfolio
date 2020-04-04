@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import "./Hero.scss"
 import styled from "styled-components"
-import Title from "./Title"
+import Title from "./Title/Title"
 import Plx from "react-plx"
 
 const HeroContainer = styled.section`
@@ -108,9 +108,8 @@ class Hero extends Component {
             <AboutDescription>
               I'm a new web developer dedicated to building creative websites
               and continuing to learn new skills in web development. Currently
-              working as a TA at BrainStation, but looking for new employment
-              opportunities as well as freelance projects! Check out some of 
-              my projects below!
+              looking for new employment opportunities as well as freelance projects! 
+              Check out some of my projects below!
             </AboutDescription>
           </AboutContainer>
         </Plx>
