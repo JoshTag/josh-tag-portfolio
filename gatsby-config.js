@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Joshua Taguicana Protfolio`,
+    title: `Joshua Taguicana Portfolio`,
     description: `Portfolio site for Joshua Taguicana - Software Developer`,
     author: `Joshua Taguicana`,
     keywords: ["Software Developer", "Web Design", "Front-End", "Back-End", "Programmer", "HTML", "CSS", "JavaScript", "React", "Vue", "Gatsby", "Firebase", "mySQL"]
