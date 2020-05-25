@@ -14,7 +14,7 @@
     "url": "https://warcraftauctions.netlify.com/",
     "gitHubURL": "https://github.com/JoshTag/warcraft-auctions",
     "image": "./images/wow-mockup.png",
-    "description": "A site that helps players in World of Warcraft make decisions on which items to buy on the auction house through graphs which display price and quantity infomation. (Desktop only)",
+    "description": "A site that helps players in World of Warcraft make decisions on which items to buy on the auction house through graphs which display price and quantity information.",
     "tags": "ReactJS, JavaScript, Express"
   },
   {
