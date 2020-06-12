@@ -7,6 +7,7 @@ import corgiButt from "../../assets/Images/corgi-butt.svg"
 import millenniumFalcon from "../../assets/Images/millennium-falcon.svg"
 import token from "../../assets/Images/token.svg"
 import lantern from "../../assets/Images/lantern.svg"
+import turtle from "../../assets/Images/turtle.svg"
 
 const spin = keyframes`
   0% {
@@ -182,6 +183,20 @@ const projectTheme = {
       },
     },
   },
+  "Animal Facts (WIP)": {
+    bg: "linear-gradient(270.23deg, #79E7FF 0%, #00D1FF 100%);",
+    bs:
+      "0 10px 15px -3px rgba(0, 209, 255, 0.50), 0 10px 15px -3px rgba(0,0,0,0.50);",
+    img: turtle,
+    mockup: {
+      width: "130px",
+      widthLarge: "210px",
+      bottom: "9rem",
+      bottomLarge: "10.5rem",
+      left: "-2rem",
+      leftLarge: "-5rem",
+    },
+  },
 }
 
 const Project = styled.article`
@@ -198,19 +213,19 @@ const Project = styled.article`
     transform: translateY(-3px);
     box-shadow: 0 14px 30px -5px rgba(0, 0, 0, 0.5);
   }
-  #project-1-hover {
+  #project-1-animation {
     animation: ${glow} 5s linear infinite;
   }
-  #project-2-hover {
+  #project-2-animation {
     animation: ${spin} 5.5s linear infinite;
   }
-  #project-3-hover {
+  #project-3-animation {
     animation: ${shake} 5s linear infinite;
   }
-  #project-4-hover {
+  #project-4-animation {
     animation: ${float} 8s linear infinite;
   }
-  #project-5-hover {
+  #project-5-animation {
     animation: ${twerk} 5s infinite alternate;
   }
   @media (min-width: 375px) {
@@ -401,7 +416,7 @@ const ProjectPreview = ({
       </ProjectDetailsLeft>
       <ProjectDetailsRight>
         <ProjectMockup
-          id={`${slug}-hover`}
+          id={`${slug}-animation`}
           fluid={imageData}
           fadeIn={true}
           title={title}
@@ -415,12 +430,12 @@ const ProjectPreview = ({
                 src={projectTheme[title].img.butt}
                 alt="Project Asset"
                 mockup={projectTheme[title].mockup.butt}
-                id={`${slug}-hover`}
+                id={`${slug}-animation`}
               />
             </CorgiAsset>
           ) : (
             <img
-              id={`${slug}-hover`}
+              id={`${slug}-animation`}
               src={projectTheme[title].img}
               alt="Project Asset"
             />

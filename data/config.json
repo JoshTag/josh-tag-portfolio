@@ -43,5 +43,14 @@
     "image": "./images/doghotdog-mockup.png",
     "description": "A fun mini game where you are shown GIFs and must choose if it is a Dog or Hot Dog.  The game is timed and once you've completed the game you can post your score to the leaderboard.",
     "tags": "ReactJS, JavaScript, Firebase, Giphy API, Sketch, Dogs, Hot Dogs"
+  },
+  {
+    "title": "Animal Facts (WIP)",
+    "slug": "project-6",
+    "url": "https://animal-facts.netlify.app/",
+    "gitHubURL": "https://github.com/JoshTag/animal-facts",
+    "image": "./images/animalfacts-mockup.png",
+    "description": "Currently a WIP.  An interactive animal fact generator for different animals around the world.  Watch in slideshow mode or pick from a number of different animals.",
+    "tags": "ReactJS, JavaScript, MongoDB, Express, Sketch"
   }
 ]
