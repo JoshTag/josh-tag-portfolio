@@ -11,7 +11,7 @@
   {
     "title": "Warcraft Auctions",
     "slug": "project-2",
-    "url": "https://warcraftauctions.netlify.com/",
+    "url": "https://warcraftauctions.netlify.app/",
     "gitHubURL": "https://github.com/JoshTag/warcraft-auctions",
     "image": "./images/wow-mockup.png",
     "description": "A site that helps players in World of Warcraft make decisions on which items to buy on the auction house through graphs which display price and quantity information.",
@@ -20,7 +20,7 @@
   {
     "title": "Webdev Slayer",
     "slug": "project-3",
-    "url": "https://webdev-slayer.netlify.com/",
+    "url": "https://webdev-slayer.netlify.app/",
     "gitHubURL": "https://github.com/JoshTag/web-slayr",
     "image": "./images/webdevslayer-mockup.png",
     "description": "A turn based game fighting game with a web developer theme.  You start as a junior dev and go through the caves of code to fight your way through until you face the final super developer boss.",
@@ -29,7 +29,7 @@
   {
     "title": "Star Wars Database",
     "slug": "project-4",
-    "url": "https://starwars-database.netlify.com/",
+    "url": "https://starwars-database.netlify.app/",
     "gitHubURL": "https://github.com/JoshTag/starwars-database",
     "image": "./images/starwars-mockup.png",
     "description": "A Star Wars database used to teach myself react hooks and Firebase.  My goal with this project was to teach myself hooks by creating a full CRUD application as well as incorporating a database.",
@@ -38,7 +38,7 @@
   {
     "title": "Dog Hot Dog",
     "slug": "project-5",
-    "url": "https://corgisarethebest.netlify.com/",
+    "url": "https://corgisarethebest.netlify.app/",
     "gitHubURL": "https://github.com/JoshTag/dog-hot-dog",
     "image": "./images/doghotdog-mockup.png",
     "description": "A fun mini game where you are shown GIFs and must choose if it is a Dog or Hot Dog.  The game is timed and once you've completed the game you can post your score to the leaderboard.",
