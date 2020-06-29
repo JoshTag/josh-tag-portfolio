@@ -106,7 +106,7 @@ class Hero extends Component {
           <AboutContainer>
             <AboutTitle>About</AboutTitle>
             <AboutDescription>
-              I'm a new web developer dedicated to building creative websites
+              I'm a web developer dedicated to building creative websites
               and continuing to learn new skills in web development. Currently
               looking for new employment opportunities as well as freelance projects! 
               Check out some of my projects below!
