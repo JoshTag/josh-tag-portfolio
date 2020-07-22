@@ -8,6 +8,7 @@ import millenniumFalcon from "../../assets/Images/millennium-falcon.svg"
 import token from "../../assets/Images/token.svg"
 import lantern from "../../assets/Images/lantern.svg"
 import turtle from "../../assets/Images/turtle.svg"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const spin = keyframes`
   0% {
@@ -286,7 +287,7 @@ const BtnContainer = styled.div`
   }
 `
 
-const ProjectButtons = styled.a`
+const ProjectButtons = styled(OutboundLink)`
   text-decoration: none;
   text-align: center;
   width: 6.5rem;

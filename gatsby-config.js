@@ -6,6 +6,16 @@ module.exports = {
     keywords: ["Software Developer", "Web Design", "Front-End", "Back-End", "Programmer", "HTML", "CSS", "JavaScript", "React", "Vue", "Gatsby", "Firebase", "mySQL"]
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-156969808-1",
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
