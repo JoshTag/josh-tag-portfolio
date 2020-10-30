@@ -1,9 +1,28 @@
 module.exports = {
   siteMetadata: {
-    title: `Joshua Taguicana Portfolio`,
+    title: `Joshua Taguicana`,
     description: `Portfolio site for Joshua Taguicana - Software Developer`,
     author: `Joshua Taguicana`,
-    keywords: ["Software Developer", "Web Design", "Front-End", "Back-End", "Programmer", "HTML", "CSS", "JavaScript", "React", "Vue", "Gatsby", "Firebase", "mySQL"]
+    keywords: [
+      "Software Developer",
+      "Software Engineer",
+      "Web Design",
+      "Front-End",
+      "Back-End",
+      "Programmer",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Vue",
+      "PHP",
+      "Gatsby",
+      "Firebase",
+      "mySQL",
+      "GrahpQL",
+      "Apollo",
+      "MongoDB",
+    ],
   },
   plugins: [
     {
@@ -59,12 +78,12 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://www.joshtag.com',
-        sitemap: 'https://www.joshtag.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }],
+        host: "https://www.joshtag.com",
+        sitemap: "https://www.joshtag.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
-     },
-  ]
+    },
+  ],
 }
