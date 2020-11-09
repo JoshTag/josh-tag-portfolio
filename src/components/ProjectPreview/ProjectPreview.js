@@ -184,7 +184,7 @@ const projectTheme = {
       },
     },
   },
-  "Animal Facts (WIP)": {
+  "Animal Facts": {
     bg: "linear-gradient(270.23deg, #79E7FF 0%, #00D1FF 100%);",
     bs:
       "0 10px 15px -3px rgba(0, 209, 255, 0.50), 0 10px 15px -3px rgba(0,0,0,0.50);",

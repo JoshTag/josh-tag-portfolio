@@ -45,12 +45,12 @@
     "tags": "ReactJS, JavaScript, Firebase, Giphy API, Sketch, Dogs, Hot Dogs"
   },
   {
-    "title": "Animal Facts (WIP)",
+    "title": "Animal Facts",
     "slug": "project-6",
     "url": "https://animal-facts.netlify.app/",
     "gitHubURL": "https://github.com/JoshTag/animal-facts",
     "image": "./images/animalfacts-mockup.png",
-    "description": "Currently a WIP.  An interactive animal fact generator for different animals around the world.  Watch in slideshow mode or pick from a number of different animals.",
+    "description": "An interactive animal fact generator for different animals around the world.  Pick from a number of different animals or cycling through them automatically.",
     "tags": "ReactJS, JavaScript, MongoDB, Express, Sketch"
   }
 ]
