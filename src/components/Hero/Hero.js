@@ -5,14 +5,10 @@ import Title from "./Title/Title"
 import Plx from "react-plx"
 
 const HeroContainer = styled.section`
-  background: radial-gradient(
-    ellipse at bottom,
-    #002f69 0%,
-    #02275c 30%,
-    #000000 100%
-  );
+  background: radial-gradient(ellipse at bottom, #373737 0%, #000 100%);
   overflow: hidden;
   height: 150vh;
+
   @media (min-width: 48rem) {
     height: 170vh;
   }
@@ -106,10 +102,10 @@ class Hero extends Component {
           <AboutContainer>
             <AboutTitle>About</AboutTitle>
             <AboutDescription>
-              I'm a web developer dedicated to building creative websites
-              and continuing to learn new skills in web development. Currently
-              looking for new employment opportunities as well as freelance projects! 
-              Check out some of my projects below!
+              I'm a web developer dedicated to building creative websites and
+              continuing to learn new skills in web development. Currently
+              looking for new employment opportunities as well as freelance
+              projects! Check out some of my projects below!
             </AboutDescription>
           </AboutContainer>
         </Plx>

@@ -2,6 +2,26 @@ import React, {useEffect} from 'react'
 import styled, { keyframes } from "styled-components"
 import anime from 'animejs/lib/anime.es.js';
 
+const hide = keyframes`
+from {
+  opacity: 0
+}
+to {
+  opacity: 1
+}
+`
+
+const SVGContainer = styled.svg`
+width: 70%;
+margin: 0 15% 0;
+opacity: 0;
+animation: ${hide} .1s .2s forwards;
+@media (min-width: 48rem) {
+  width: 60%;
+  margin: 0 20% 0;
+}
+`
+
 const Title = () => {
 
   useEffect(() => {
@@ -42,24 +62,6 @@ const Title = () => {
     delay: 3000
   })
 
-  const hide = keyframes`
-    from {
-      opacity: 0
-    }
-    to {
-      opacity: 1
-    }
-  `
-  const SVGContainer = styled.svg`
-    width: 70%;
-    margin: 0 15% 0;
-    opacity: 0;
-    animation: ${hide} .1s .2s forwards;
-    @media (min-width: 48rem) {
-      width: 60%;
-      margin: 0 20% 0;
-  }
-  `
   return (
     <SVGContainer width="1067px" viewBox="0 0 1067 354" version="1.1" xmlns="http://www.w3.org/2000/svg" >
       <path className="fillPath pathOne" d="M34,153 C23.7551277,153 15.527338,149.552059 9.31638418,142.656073 C3.10543034,135.760088 0,126.695913 0,115.463277 L0,98.6144068 C0,97.1925541 0.640294915,96.4816384 1.92090395,96.4816384 L16.519774,96.4816384 C17.8003831,96.4816384 18.440678,97.1925541 18.440678,98.6144068 L18.440678,115.889831 C18.440678,121.577241 19.8813415,126.233739 22.7627119,129.859463 C25.6440822,133.485188 29.3898075,135.298023 34,135.298023 C38.6101925,135.298023 42.3559178,133.485188 45.2372881,129.859463 C48.1186585,126.233739 49.559322,121.577241 49.559322,115.889831 L49.559322,4.13276836 C49.559322,2.71091568 50.1996169,2 51.480226,2 L66.079096,2 C67.3597051,2 68,2.71091568 68,4.13276836 L68,115.463277 C68,126.695913 64.8945697,135.760088 58.6836158,142.656073 C52.472662,149.552059 44.2448723,153 34,153 Z" stroke="#FFFFFF"></path>
