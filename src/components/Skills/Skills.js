@@ -1,45 +1,23 @@
 import React from "react"
-import Plx from "react-plx"
 import styled from "styled-components"
 
-// img imports
+// Image Imports from devicons using original wordmark
 import css from "../../assets/Icons/css3-original-wordmark.svg"
 import html from "../../assets/Icons/html5-original-wordmark.svg"
-import git from "../../assets/Icons/git-original.svg"
 import js from "../../assets/Icons/javascript-original.svg"
 import firebase from "../../assets/Icons/firebase-icon.svg"
-import mySQL from "../../assets/Icons/mysql-original-wordmark.svg"
-import node from "../../assets/Icons/nodejs-original.svg"
-import react from "../../assets/Icons/react-original.svg"
-import scss from "../../assets/Icons/sass-original.svg"
-import vue from "../../assets/Icons/vuejs-original-wordmark.svg"
-import express from "../../assets/Icons/express-original-wordmark.svg"
-import heroku from "../../assets/Icons/heroku-plain-wordmark.svg"
-import netlify from "../../assets/Icons/netlify-icon.svg"
+import mySQL from "../../assets/Icons/mysql.svg"
+import node from "../../assets/Icons/nodejs.svg"
+import react from "../../assets/Icons/react.svg"
+import vue from "../../assets/Icons/vuejs.svg"
 import gatsby from "../../assets/Icons/gatsbyjs-icon.svg"
 import graphql from "../../assets/Icons/graphql-icon.svg"
-
-import {
-  parallaxCSS,
-  parallaxHTML,
-  parallaxGit,
-  parallaxJS,
-  parallaxFirebase,
-  parallaxMySQL,
-  parallaxNode,
-  parallaxReact,
-  parallaxSass,
-  parallaxVue,
-  parallaxGatsby,
-  parallaxGraphQL,
-  parallaxExpress,
-  parallaxHeroku,
-  parallaxNetlify
-} from "./ParallaxData"
+import php from "../../assets/Icons/php.svg"
+import mongo from "../../assets/Icons/mongodb.svg"
 
 const SkillContainer = styled.section`
   padding-top: 10rem;
-  background: #F5F5F5;
+  background: #f5f5f5;
   overflow: hidden;
 `
 
@@ -58,7 +36,6 @@ const SkillTitle = styled.h2`
 
 const IconContainer = styled.div`
   width: 18rem;
-  height: 38rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -66,53 +43,33 @@ const IconContainer = styled.div`
   position: relative;
   margin: 3rem auto;
   @media (min-width: 30rem) {
-    margin: 5rem auto;
+    margin: 2rem auto 5rem;
     width: 20rem;
   }
   @media (min-width: 48rem) {
     width: 39.5rem;
-    height: 28rem;
   }
   @media (min-width: 64rem) {
     width: 52rem;
-    height: 30rem;
-  }
-`
-
-const PlxLayer = styled(Plx)`
-  height: 75px;
-  width: 75px;
-  margin: auto;
-  @media (min-width: 30rem) {
-    height: 95px;
-    width: 95px;
-  }
-  @media (min-width: 48rem) {
-    height: 120px;
-    width: 120px;
-  }
-  @media (min-width: 64rem) {
-    height: 130px;
-    width: 130px;
-    margin: 0 1rem;
   }
 `
 
 const Icons = styled.img`
-  margin: 0;
+  margin: 10px;
   height: 75px;
   width: 75px;
   @media (min-width: 30rem) {
-    height: 95px;
-    width: 95px;
+    margin: 20px 15px;
   }
   @media (min-width: 48rem) {
-    height: 120px;
-    width: 120px;
+    margin: 20px;
+    height: 75px;
+    width: 75px;
   }
   @media (min-width: 64rem) {
-    height: 130px;
-    width: 130px;
+    margin: 25px;
+    height: 85px;
+    width: 85px;
   }
 `
 
@@ -121,51 +78,18 @@ const Skills = () => {
     <SkillContainer>
       <SkillTitle>Skills</SkillTitle>
       <IconContainer>
-        <PlxLayer parallaxData={parallaxHTML}>
-          <Icons src={html} alt="HTML" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxCSS}>
-          <Icons src={css} alt="CSS" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxGit}>
-          <Icons src={git} alt="Git" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxJS}>
-          <Icons src={js} alt="JavaScript" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxSass}>
-          <Icons src={scss} alt="SASS" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxGatsby}>
-          <Icons src={gatsby} alt="Gatsby" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxGraphQL}>
-          <Icons src={graphql} alt="GraphQl" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxReact}>
-          <Icons src={react} alt="React" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxVue}>
-          <Icons src={vue} alt="Vue" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxNode}>
-          <Icons src={node} alt="Node" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxFirebase}>
-          <Icons src={firebase} alt="Firebase" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxExpress}>
-          <Icons src={express} alt="Express" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxHeroku}>
-          <Icons src={heroku} alt="Heroku" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxMySQL}>
-          <Icons src={mySQL} alt="mySQL" />
-        </PlxLayer>
-        <PlxLayer parallaxData={parallaxNetlify}>
-          <Icons src={netlify} alt="Netlify" />
-        </PlxLayer>
+        <Icons src={html} alt="HTML" />
+        <Icons src={css} alt="CSS" />
+        <Icons src={js} alt="JavaScript" />
+        <Icons src={php} alt="PHP" />
+        <Icons src={react} alt="React" />
+        <Icons src={gatsby} alt="Gatsby" />
+        <Icons src={graphql} alt="GraphQL" />
+        <Icons src={vue} alt="Vue" />
+        <Icons src={node} alt="Node" />
+        <Icons src={firebase} alt="Firebase" />
+        <Icons src={mySQL} alt="mySQL" />
+        <Icons src={mongo} alt="MongoDB" />
       </IconContainer>
     </SkillContainer>
   )
