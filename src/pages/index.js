@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import Hero from "../components/Hero/Hero"
@@ -45,10 +45,6 @@ const ProjectTitle = styled.h2`
 `
 
 export default () => {
-
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
 
   const data = useStaticQuery(graphql`
     {

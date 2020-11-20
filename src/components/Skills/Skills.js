@@ -41,9 +41,10 @@ const IconContainer = styled.div`
   justify-content: space-evenly;
   justify-items: center;
   position: relative;
-  margin: 3rem auto;
+  margin: 3rem auto 7rem;
+  
   @media (min-width: 30rem) {
-    margin: 2rem auto 5rem;
+    margin: 2rem auto 7rem;
     width: 20rem;
   }
   @media (min-width: 48rem) {

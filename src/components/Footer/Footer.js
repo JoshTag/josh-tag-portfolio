@@ -1,70 +1,163 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import resume from "../../assets/Resume/Joshua_Taguicana_Resume.pdf"
 
+const scroll250 = keyframes`
+  0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+`
+
+const scroll350 = keyframes`
+  0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-350px * 7))}
+`
+
+const scroll450 = keyframes`
+  0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-450px * 7))}
+`
+
 const FooterContainer = styled.footer`
-  height: 70vh;
+  height: 60vh;
   background: #121212;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (min-width: 37.5rem) {
-    height: 50vh;
-  }
-`
 
-const FooterTitle = styled.h2`
-  color: #fff;
-  font-size: 2rem;
-  padding-top: 3rem;
-  margin: 0 2rem 3rem;
-  width: 18rem;
-  text-align: center;
-  @media (min-width: 37.5rem) {
-    width: 20rem;
-  }
-  @media (min-width: 48rem) {
-    font-size: 2.5rem;
-    margin: 0 10rem 4rem;
-    width: 38rem;
+  @media (min-width: 30rem) {
+    height: 70vh;
   }
   @media (min-width: 64rem) {
-    font-size: 3.5rem;
-    margin: 0 10rem 3rem;
-    width: 52rem;
+    height: 60vh;
   }
 `
 
-const LinkContainer = styled.div`
+const Slider = styled.div`
+  width: 100vw;
+  height: 100px;
+  margin: 0;
+  overflow: hidden;
+  margin-top: 25px;
+
+  @media (min-width: 64rem) {
+    margin: 50px 0 30px;
+  }
+`
+
+const SliderTrack = styled.div`
+  animation: ${scroll250} 120s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+
+  @media (min-width: 30rem) {
+    width: calc(350px * 14);
+    animation: ${scroll350} 120s linear infinite;
+  }
+
+  @media (min-width: 64rem) {
+    width: calc(450px * 14);
+    animation: ${scroll450} 120s linear infinite;
+  }
+
+  &:hover > span {
+    -webkit-text-fill-color: #fff;
+    cursor: default;
+  }
+`
+
+const SliderText = styled.span`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 18rem;
-  @media (min-width: 37.5rem) {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 20rem;
+  justify-content: center;
+  height: 100px;
+  width: 250px;
+  font-size: 3rem;
+  color: #fff;
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+
+  @media (min-width: 30rem) {
+    width: 350px;
+    font-size: 4rem;
   }
-  @media (min-width: 48rem) {
-    width: 30rem;
+  @media (min-width: 64rem) {
+    width: 450px;
+    font-size: 5rem;
   }
 `
 
-const FooterLinks = styled.a`
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.5rem;
-  margin: 1rem 0;
-  display: inline-block;
-  width: 80px;
-  text-align: center;
+const LinkList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  margin: 0;
+
+  @media (min-width: 30rem) {
+    padding: 2rem 0;
+    width: 22rem;
+  }
   @media (min-width: 48rem) {
-    font-size: 1.5rem;
+    width: 35rem;
   }
   @media (min-width: 64rem) {
-    font-size: 1.7rem;
-    width: 100px;
+    width: 48rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`
+
+const LinkItem = styled.li`
+  margin: 0.5rem 0;
+  display: inline-block;
+`
+
+const Link = styled.a`
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  font-weight: 300;
+  transition: 0.3s;
+
+  &:before,
+  :after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    top: 100%;
+    background: #ddd;
+  }
+
+  &:after {
+    right: 0;
+    -webkit-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -moz-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -o-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &:hover:after {
+    background: transparent;
+    width: 100%;
+  }
+
+  &:hover:before {
+    width: 100%;
+    -webkit-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -moz-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -o-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  @media (min-width: 64rem) {
+    font-size: 1.1rem;
   }
 `
 
@@ -83,17 +176,50 @@ const FooterSub = styled.small`
 const Footer = () => {
   return (
     <FooterContainer>
-      <FooterTitle>Josh Tag</FooterTitle>
-      <LinkContainer>
-        <FooterLinks href="https://github.com/JoshTag">GitHub</FooterLinks>
-        <FooterLinks href={resume} target="_blank" rel="noopener noreferrer">
-          Resume
-        </FooterLinks>
-        <FooterLinks href="https://linkedin.com/in/joshua-taguicana/">
-          LinkedIn
-        </FooterLinks>
-        <FooterLinks href="mailto:joshtaguicana@gmail.com">Email</FooterLinks>
-      </LinkContainer>
+      <Slider>
+        <SliderTrack>
+          <SliderText>CONTACT ME !</SliderText>
+          <SliderText>CONTACT ME !</SliderText>
+          <SliderText>CONTACT ME !</SliderText>
+          <SliderText>CONTACT ME !</SliderText>
+          <SliderText>CONTACT ME !</SliderText>
+          <SliderText>CONTACT ME !</SliderText>
+          <SliderText>CONTACT ME !</SliderText>
+          <SliderText>CONTACT ME !</SliderText>
+          <SliderText>CONTACT ME !</SliderText>
+          <SliderText>CONTACT ME !</SliderText>
+          <SliderText>CONTACT ME !</SliderText>
+        </SliderTrack>
+      </Slider>
+      <LinkList>
+        <LinkItem>
+          <Link href="mailto:joshtaguicana@gmail.com">write me an email</Link>
+        </LinkItem>
+        <LinkItem>
+          <Link href="https://linkedin.com/in/joshua-taguicana/">
+            stalk me on linkedin
+          </Link>
+        </LinkItem>
+        <LinkItem>
+          <Link href="https://github.com/JoshTag">
+            criticize my code on github
+          </Link>
+        </LinkItem>
+        <LinkItem>
+          <Link href={resume} target="_blank" rel="noopener noreferrer">
+            look at my resume
+          </Link>
+        </LinkItem>
+        <LinkItem>
+          <Link
+            href="https://open.spotify.com/user/jtagzurit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            judge my music taste
+          </Link>
+        </LinkItem>
+      </LinkList>
       <FooterSub>&copy; 2020 Joshua Taguicana</FooterSub>
     </FooterContainer>
   )
