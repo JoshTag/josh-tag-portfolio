@@ -49,6 +49,7 @@ const SliderTrack = styled.div`
   animation: ${scroll250} 120s linear infinite;
   display: flex;
   width: calc(250px * 14);
+  transition: 0.8s;
 
   @media (min-width: 30rem) {
     width: calc(350px * 14);
@@ -61,7 +62,7 @@ const SliderTrack = styled.div`
   }
 
   &:hover > span {
-    -webkit-text-fill-color: #fff;
+    color: #fff;
     cursor: default;
   }
 `
@@ -73,14 +74,13 @@ const SliderText = styled.span`
   height: 100px;
   width: 250px;
   font-size: 3rem;
-  color: #fff;
-  -webkit-text-fill-color: #000;
+  color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
-  -webkit-transition: 0.8s;
-  -moz-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 
   @media (min-width: 30rem) {
     width: 350px;
@@ -123,6 +123,9 @@ const Link = styled.a`
   font-size: 1rem;
   position: relative;
   font-weight: 300;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 
   &:before,
@@ -137,10 +140,10 @@ const Link = styled.a`
 
   &:after {
     right: 0;
-    -webkit-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-    -moz-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-    -o-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -webkit-transition: width 0.6s cubic-bezier(.7,0,.3,1);
+    -moz-transition: width 0.6s cubic-bezier(.7,0,.3,1);
+    -o-transition: width 0.6s cubic-bezier(.7,0,.3,1);
+    transition: width 0.6s cubic-bezier(.7,0,.3,1);
   }
 
   &:hover:after {
@@ -150,10 +153,10 @@ const Link = styled.a`
 
   &:hover:before {
     width: 100%;
-    -webkit-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-    -moz-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-    -o-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -webkit-transition: width 0.6s cubic-bezier(.7,0,.3,1);
+    -moz-transition: width 0.6s cubic-bezier(.7,0,.3,1);
+    -o-transition: width 0.6s cubic-bezier(.7,0,.3,1);
+    transition: width 0.6s cubic-bezier(.7,0,.3,1);
   }
 
   @media (min-width: 64rem) {
