@@ -1,6 +1,7 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import resume from "../../assets/Resume/Joshua_Taguicana_Resume.pdf"
+import tagiguana from "./../../assets/Images/tagiguana.png"
 
 const scroll250 = keyframes`
   0% { transform: translateX(0); }
@@ -140,10 +141,10 @@ const Link = styled.a`
 
   &:after {
     right: 0;
-    -webkit-transition: width 0.6s cubic-bezier(.7,0,.3,1);
-    -moz-transition: width 0.6s cubic-bezier(.7,0,.3,1);
-    -o-transition: width 0.6s cubic-bezier(.7,0,.3,1);
-    transition: width 0.6s cubic-bezier(.7,0,.3,1);
+    -webkit-transition: width 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+    -moz-transition: width 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+    -o-transition: width 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: width 0.6s cubic-bezier(0.7, 0, 0.3, 1);
   }
 
   &:hover:after {
@@ -153,10 +154,10 @@ const Link = styled.a`
 
   &:hover:before {
     width: 100%;
-    -webkit-transition: width 0.6s cubic-bezier(.7,0,.3,1);
-    -moz-transition: width 0.6s cubic-bezier(.7,0,.3,1);
-    -o-transition: width 0.6s cubic-bezier(.7,0,.3,1);
-    transition: width 0.6s cubic-bezier(.7,0,.3,1);
+    -webkit-transition: width 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+    -moz-transition: width 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+    -o-transition: width 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: width 0.6s cubic-bezier(0.7, 0, 0.3, 1);
   }
 
   @media (min-width: 64rem) {
@@ -223,7 +224,11 @@ const Footer = () => {
           </Link>
         </LinkItem>
       </LinkList>
-      <FooterSub>&copy; 2020 Joshua Taguicana</FooterSub>
+      <FooterSub>
+        <Link href={tagiguana} target="_blank" rel="noopener noreferrer">
+          &copy; 2020 Joshua Taguicana
+        </Link>
+      </FooterSub>
     </FooterContainer>
   )
 }
