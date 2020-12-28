@@ -35,14 +35,36 @@ const FooterContainer = styled.footer`
 `
 
 const Slider = styled.div`
-  width: 100vw;
+  width: 97vw;
   height: 100px;
   margin: 0;
   overflow: hidden;
   margin-top: 25px;
+  position: relative;
 
   @media (min-width: 64rem) {
     margin: 50px 0 30px;
+  }
+
+  :before, 
+  :after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+  }
+
+  :before {
+    background: linear-gradient(to right, #121212, rgba(18, 18, 18, 0.3), rgba(18, 18, 18, 0));
+    left: 0;
+  }
+
+  :after {
+    background: linear-gradient(to left, #121212, rgba(18, 18, 18, 0.3), rgba(18, 18, 18, 0));
+    position: absolute;
+    right: 0;
   }
 `
 
