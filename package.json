@@ -8,7 +8,7 @@
     "@react-spring/addons": "^9.0.0-beta.33",
     "animejs": "^3.1.0",
     "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^2.18.4",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-google-analytics": "^2.3.13",
     "gatsby-plugin-manifest": "^2.2.41",
