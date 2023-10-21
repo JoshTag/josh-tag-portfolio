@@ -38,7 +38,7 @@
   {
     "title": "Dog Hot Dog",
     "slug": "project-5",
-    "url": "https://corgisarethebest.netlify.app/",
+    "url": "https://doghotdog.netlify.app/",
     "gitHubURL": "https://github.com/JoshTag/dog-hot-dog",
     "image": "./images/doghotdog-mockup.png",
     "description": "A fun mini game where you are shown GIFs and must choose if it is a Dog or Hot Dog.  The game is timed and once you've completed the game you can post your score to the leaderboard.",
